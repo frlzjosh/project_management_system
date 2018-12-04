@@ -1,9 +1,16 @@
 .sidebar{
     position: relative;
-    background-color:black;
-    width: 250px;
+    background-color: #222222;
+    width: 200px;
     height: 500px;
     color:white;
+    &__home{
+        background-color: black;
+        position: relative;
+        padding-top: 15px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
     &__list{
         list-style-type: none;
         position: absolute;

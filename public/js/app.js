@@ -51151,6 +51151,7 @@ module.exports = Component.exports
 //
 //
 //
+//
 
 /***/ }),
 /* 53 */
@@ -51168,7 +51169,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "sidebar" }, [
-      _c("div", { attrs: { clas: "sidebar__home-icon" } }),
+      _c("div", { staticClass: "sidebar__home" }, [
+        _c("h4", [_c("i", { staticClass: "fas fa-home" })])
+      ]),
       _vm._v(" "),
       _c("ul", { staticClass: "sidebar__list" }, [
         _c("li", { staticClass: "sidebar__list-item" }, [

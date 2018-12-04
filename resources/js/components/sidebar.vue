@@ -1,6 +1,7 @@
 <template>
 <div class="sidebar">
-    <div clas="sidebar__home-icon">
+    <div class="sidebar__home">
+        <h4><i class="fas fa-home"></i></h4>
     </div>
     <ul class="sidebar__list">
         <li class="sidebar__list-item">Deliverables</li>
