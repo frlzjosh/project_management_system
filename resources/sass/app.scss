@@ -2,12 +2,16 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+// Font awesome
+@import "../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css";
+
+
 // Variables
 @import 'variables';
 
 // components
 @import "navbar";
-
+@import "sidebar";
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
