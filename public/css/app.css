@@ -17,7 +17,8 @@
   margin-right: 5px;
   height: 25px;
   width: 25px;
-  background-color: black;
+  background-image: url(/project_management_system/public/images/john.jpg);
+  background-size: contain;
   border-radius: 25px;
   border: 1.5px white solid;
 }
