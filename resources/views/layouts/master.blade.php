@@ -12,5 +12,9 @@
     <div class="main">
     @yield('body_content')
     </div>
+    <div id="app">
+        <v-app/>
+    </div>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
