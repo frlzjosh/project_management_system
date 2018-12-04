@@ -1,0 +1,15 @@
+.sidebar{
+    position: relative;
+    background-color:black;
+    width: 250px;
+    height: 500px;
+    color:white;
+    &__list{
+        list-style-type: none;
+        position: absolute;
+        &-item{
+            position: relative;
+            margin: 10px 0 10px 0;
+        }
+    }
+}
