@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDeliverablesTable extends Migration
+class CreateActionItemsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,19 @@ class CreateDeliverablesTable extends Migration
      */
     public function up()
     {
-        Schema::create('deliverables', function (Blueprint $table) {
+        Schema::create('action_items', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('name');
             $table->text('description');
-            $table->date('due_date');
+            $table->date('date_created');
+            $table->date('date_assigned');
+            $table->string('resource_assigned');
+            $table->date('expected_completion_date');
+            $table->date('actual_completion_date')->nullable();
+            $table->string('status');
+            $table->string('status_description');
         });
-        
     }
 
     /**
@@ -30,6 +35,6 @@ class CreateDeliverablesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('deliverables');
+        Schema::dropIfExists('action_items');
     }
 }
