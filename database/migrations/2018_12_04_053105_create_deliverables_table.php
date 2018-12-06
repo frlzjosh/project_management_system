@@ -19,8 +19,6 @@ class CreateDeliverablesTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->date('due_date');
-            $table->string('status');
-
         });
         
     }
