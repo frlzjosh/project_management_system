@@ -1,27 +1,44 @@
 <template>
-<div class="table-component">
-    <table class="table">
-        <thead>
-            <tr class="table__header">
-                <th scope="col">First</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Mark</td>
-            </tr>
-            <tr>
-                <td>Jacob</td>
-            </tr>
-            <tr>
-                <td>Larry</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="col-md-12">
+    <div class="table-component">
+        <table class="table">
+            <thead>
+                <tr class="table__header">
+                    <th>First</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >Mark</td>
+                </tr>
+                <tr>
+                    <td>Jacob</td>
+                </tr>
+                <tr>
+                    <td>Larry</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 </template>
 <script>
+import {mapState} from 'vuex';
+import {mapGetters} from 'vuex';
+
 export default {
-    props:['amountOfRows','amountOfCols'],
+    data(){
+        return{
+
+        }
+    },
+    computed: {
+        ...mapGetters([
+            'getRows',
+        ])
+    },
+    methods: {
+
+    }
 }
 </script>
