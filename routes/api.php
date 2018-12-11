@@ -14,8 +14,22 @@ use Illuminate\Http\Request;
 */
 
 //deliverables
-Route::get('deliverable/hello', 'DeliverableController@testing');
-Route::get('deliverable/all', 'DeliverableController@getAll');
+Route::get('deliverables/hello', 'DeliverableController@testing');
+Route::get('deliverables/all', 'DeliverableController@getAllDeliverables');
+
+
+//resources
+Route::get('resources/all', 'ResourceController@getAllResources');
+
+//issues
+Route::get('issues/all', 'IssueController@getAllIssues');
+
+//action items
+Route::get('action-items/all', 'ActionItemController@getAllActionItems');
+
+//tasks
+Route::get('tasks/all', 'ActionItemController@getAllTasks');
+
 
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {

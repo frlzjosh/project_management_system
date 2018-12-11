@@ -85,7 +85,7 @@ class DeliverableController extends Controller
     public function testing(){
         return 'Small but significant process';
     }
-    public function getAll() {
+    public function getAllDeliverables() {
         $allDeliverables = Deliverable::all();
         return $allDeliverables;
     }
