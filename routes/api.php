@@ -28,7 +28,7 @@ Route::get('issues/all', 'IssueController@getAllIssues');
 Route::get('action-items/all', 'ActionItemController@getAllActionItems');
 
 //tasks
-Route::get('tasks/all', 'ActionItemController@getAllTasks');
+Route::get('tasks/all', 'TaskController@getAllTasks');
 
 
 

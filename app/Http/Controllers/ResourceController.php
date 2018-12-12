@@ -82,4 +82,9 @@ class ResourceController extends Controller
     {
         //
     }
+    public function getAllResources() {
+        $allResources = Resource::all();
+        return $allResources;
+    }
+
 }
