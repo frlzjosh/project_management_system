@@ -24,7 +24,6 @@ class ActionItemController extends Controller
      */
     public function create()
     {
-        //
     }
 
     /**
@@ -35,7 +34,20 @@ class ActionItemController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $actionItem = new ActionItem();
+        $actionItem->name = $request->name;        
+        $actionItem->description = $request->description;
+        $actionItem->date_created = $request->date_created;
+        $actionItem->date_assigned = $request->date_assigned;
+        $actionItem->resource_assigned = $request->resource_assigned;                
+        $actionItem->expected_completion_date = $request->expected_completion_date;
+        $actionItem->actual_completion_date = $request->actual_completion_date;
+        $actionItem->status = $request->status;
+        $actionItem->status_description = $request->status_description;        
+
+        $actionItem->save();
+        return response('ActionItem Added successfully', 200)
+        ->header('Content-Type', 'text/plain');
     }
 
     /**

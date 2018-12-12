@@ -42,7 +42,7 @@ class ResourceController extends Controller
         $resource->availability_calendar = $request->availability_calendar;
         $resource->pay_rate = $request->pay_rate;
         $resource->save();
-        return response('Added successfully', 200)
+        return response('Resource Added successfully', 200)
         ->header('Content-Type', 'text/plain');
     }
 
