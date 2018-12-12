@@ -3,6 +3,16 @@
     <div class="col-md-12">
         <sub-header></sub-header>
         <!-- table -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="home__buttons">
+                    <button type="button" class="btn btn-primary">16 Deliverables</button>
+                    <button type="button" class="btn btn-success">124 Tasks</button>
+                    <button type="button" class="btn btn-danger">26 Issues</button>
+                    <button type="button" class="btn btn-warning">37 Actions Items</button>
+                </div>
+            </div>
+        </div>
         <div class="table-component">
             <table class="table">
                 <thead>
