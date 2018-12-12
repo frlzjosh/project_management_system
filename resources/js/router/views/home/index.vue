@@ -1,5 +1,5 @@
 <template>
-<div class="home">
+<div class="pageSize home">
     <div class="col-md-12">
         <sub-header></sub-header>
         <!-- table -->

@@ -11,9 +11,11 @@
 
 //Helpers
 @import 'helpers';
+@import 'base';
 
 // router
 @import 'router';
+
 
 // components
 @import "buttons";
@@ -28,6 +30,7 @@
 
 //views
 @import "./views/home";
+@import "./views/deliverables";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
