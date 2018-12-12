@@ -82,4 +82,10 @@ class ActionItemController extends Controller
     {
         //
     }
+    public function getAllActionItems() {
+        $allActionItems = ActionItem::all();
+        return $allActionItems;
+    
+    }
+
 }
