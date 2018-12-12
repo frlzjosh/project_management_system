@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.router-link {
+  color: white !important;
+}
+
 .navbar {
   height: 45px;
   width: 100%;
@@ -79,6 +83,15 @@
 .table__header {
   background-color: #5cabdb;
   color: white;
+}
+
+.subHeader {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.home {
+  width: 800px;
 }
 
 /*!

@@ -1,24 +1,38 @@
 <template>
-<div>
-    <div class="row">
-        <div class="col-md-2">
-            <sidebar></sidebar>
-        </div>
-        <div class="col-md-10">
-            <table-component></table-component>
+<div class="home">
+    <div class="col-md-12">
+        <sub-header></sub-header>
+        <!-- table -->
+        <div class="table-component">
+            <table class="table">
+                <thead>
+                    <tr class="table__header">
+                        <th>First</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td >Mark</td>
+                    </tr>
+                    <tr>
+                        <td>Jacob</td>
+                    </tr>
+                    <tr>
+                        <td>Larry</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
-
 </template>
 
 <script>
-import sidebar from '../../../components/sidebar';
-import tableComponent from '../../../components/tableComponent';
+import subHeader from '../../../components/global/subHeader.vue';
+
 export default {
     components: {
-        sidebar,
-        tableComponent
-        },
+        subHeader,
+    }
 }
 </script>

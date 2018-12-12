@@ -1,4 +1,5 @@
 <template>
+<div class="row">
 <div class="col-md-12">
     <div class="table-component">
         <table class="table">
@@ -20,6 +21,7 @@
             </tbody>
         </table>
     </div>
+</div>
 </div>
 </template>
 <script>
