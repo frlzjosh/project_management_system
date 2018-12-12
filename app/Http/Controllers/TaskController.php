@@ -35,7 +35,13 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $task = new Task();
+        $task->name = $request->name;
+        $task->description = $request->description;
+        $task->resource_assigned = $request->resource_assigned;
+        $task->save();
+        return response('Task Added successfully', 200)
+        ->header('Content-Type', 'text/plain');
     }
 
     /**
