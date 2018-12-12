@@ -82,4 +82,8 @@ class IssueController extends Controller
     {
         //
     }
+    public function getAllIssues(Issue $issue) {
+        $allIssues = Issue::all();
+        return $allIssues;
+    }
 }
