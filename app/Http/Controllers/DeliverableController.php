@@ -74,9 +74,16 @@ class DeliverableController extends Controller
      * @param  \App\Deliverable  $deliverable
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Deliverable $deliverable)
+    public function update($id ,Request $request)
     {
-        //
+    
+    $deliverable = Deliverable::find($id);
+    $deliverable->name = $request->name ? $request->name :  $deliverable->name;
+    $deliverable->description = $request->description ? $request->description : $deliverable->description;
+    $deliverable->due_date = $request->due_date ? $request->due_date : $deliverable->due_date; 
+    $deliverable->save();
+    return response('Deliverable updated successfully', 200)
+    ->header('Content-Type', 'text/plain');
     }
 
     /**
