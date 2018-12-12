@@ -20,7 +20,7 @@ Route::get('deliverables/all', 'DeliverableController@getAllDeliverables');
 
 //resources
 Route::get('resources/all', 'ResourceController@getAllResources');
-
+Route::post('createResource', 'ResourceController@store');
 //issues
 Route::get('issues/all', 'IssueController@getAllIssues');
 
