@@ -78,9 +78,9 @@ class DeliverableController extends Controller
     {
     
     $deliverable = Deliverable::find($id);
-    $deliverable->name = $request->name;
-    $deliverable->description = $request->description;
-    $deliverable->due_date = $request->due_date;
+    $deliverable->name = $request->name ? $request->name :  $deliverable->name;
+    $deliverable->description = $request->description ? $request->description : $deliverable->description;
+    $deliverable->due_date = $request->due_date ? $request->due_date : $deliverable->due_date; 
     $deliverable->save();
     return response('Deliverable updated successfully', 200)
     ->header('Content-Type', 'text/plain');

@@ -39,7 +39,7 @@ Route::patch('updateActionItem/{actionItemId}', 'ActionItemController@update');
 //tasks
 Route::get('tasks/all', 'TaskController@getAllTasks');
 Route::post('createTask', 'TaskController@store');
-Route::patch('updateTask/{taskId}', 'ResourceController@update');
+Route::patch('updateTask/{taskId}', 'TaskController@update');
 
 
 
