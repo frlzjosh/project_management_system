@@ -35,7 +35,17 @@ class IssueController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $issue = new Issue();
+        $issue->description = $request->description;
+        $issue->priority = $request->priority;
+        $issue->severity = $request->severity;
+        $issue->date_raised = $request->date_raised;
+        $issue->date_assigned = $request->date_assigned;
+        $issue->expected_completion_date = $request->expected_completion_date;
+        $issue->actual_completion_date = $request->actual_completion_date;
+        $issue->save();
+        return response('Issue Added successfully', 200)
+        ->header('Content-Type', 'text/plain');
     }
 
     /**

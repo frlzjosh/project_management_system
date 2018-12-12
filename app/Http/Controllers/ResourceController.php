@@ -24,7 +24,7 @@ class ResourceController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -35,7 +35,15 @@ class ResourceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $resource = new Resource();
+        $resource->name = $request->name;
+        $resource->title = $request->title;
+        $resource->list_of_skills = $request->list_of_skills;
+        $resource->availability_calendar = $request->availability_calendar;
+        $resource->pay_rate = $request->pay_rate;
+        $resource->save();
+        return response('Resource Added successfully', 200)
+        ->header('Content-Type', 'text/plain');
     }
 
     /**

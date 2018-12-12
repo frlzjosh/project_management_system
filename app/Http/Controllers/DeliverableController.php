@@ -35,7 +35,14 @@ class DeliverableController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $deliverable = new Deliverable();
+        $deliverable->name = $request->name;
+        $deliverable->description = $request->description;
+        $deliverable->due_date = $request->due_date;
+        $deliverable->save();
+        return response('Deliverable Added successfully', 200)
+        ->header('Content-Type', 'text/plain');
+
     }
 
     /**
