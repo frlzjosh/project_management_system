@@ -9,9 +9,22 @@
 // Variables
 @import 'variables';
 
+//Helpers
+@import 'helpers';
+
+// router
+@import 'router';
+
 // components
-@import "navbar";
-@import "sidebar";
+@import "buttons";
+@import "./components/navbar";
+@import "./components/sidebar";
+@import "./components/table";
+@import "./components/subHeader";
+
+//views
+@import "./views/home";
+
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
