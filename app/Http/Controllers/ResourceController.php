@@ -75,9 +75,17 @@ class ResourceController extends Controller
      * @param  \App\Resource  $resource
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Resource $resource)
+    public function update($id,Request $request)
     {
-        //
+        $resource = Resource::find($id);
+        $resource->name = $request->name;
+        $resource->title = $request->title;
+        $resource->list_of_skills = $request->list_of_skills;
+        $resource->availability_calendar = $request->availability_calendar;
+        $resource->pay_rate = $request->pay_rate;
+        $resource->save();
+        return response('Resource Updated successfully', 200)
+        ->header('Content-Type', 'text/plain');   
     }
 
     /**
