@@ -17,10 +17,14 @@
 
 // components
 @import "buttons";
+@import "./components/gantt";
 @import "./components/navbar";
 @import "./components/sidebar";
 @import "./components/table";
 @import "./components/subHeader";
+
+//mixins
+@import "./mixins/ganttMixins";
 
 //views
 @import "./views/home";
