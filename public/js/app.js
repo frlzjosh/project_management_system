@@ -51147,6 +51147,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -51294,16 +51320,102 @@ var staticRenderFns = [
       _c("table", { staticClass: "table" }, [
         _c("thead", [
           _c("tr", { staticClass: "table__header" }, [
-            _c("th", [_vm._v("First")])
+            _c("th", [
+              _vm._v("Gantt Chart "),
+              _c("p", { staticClass: "table__header--left" }, [
+                _vm._v("5 Resources")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("th"),
+            _vm._v(" "),
+            _c("th"),
+            _vm._v(" "),
+            _c("th")
           ])
         ]),
         _vm._v(" "),
         _c("tbody", [
-          _c("tr", [_c("td", [_vm._v("Mark")])]),
+          _c("tr", [
+            _c("td", [
+              _c(
+                "p",
+                { staticClass: "table__header-date table__header-date--first" },
+                [_vm._v("Aug 1")]
+              ),
+              _c("p", { staticClass: "table__header-date" }, [_vm._v("Aug 8")]),
+              _c("p", { staticClass: "table__header-date" }, [
+                _vm._v("Aug 15")
+              ]),
+              _c("p", { staticClass: "table__header-date" }, [
+                _vm._v("Aug 22")
+              ]),
+              _c("p", { staticClass: "table__header-date" }, [
+                _vm._v("Aug 29")
+              ]),
+              _c("p", { staticClass: "table__header-date" }, [_vm._v("Sep 5")]),
+              _c("p", { staticClass: "table__header-date" }, [
+                _vm._v("Sep 12")
+              ]),
+              _c("p", { staticClass: "table__header-date" }, [_vm._v("Sep 19")])
+            ])
+          ]),
           _vm._v(" "),
-          _c("tr", [_c("td", [_vm._v("Jacob")])]),
+          _c("tr", [
+            _c("td", [_vm._v("Task 1")]),
+            _vm._v(" "),
+            _c("td", { staticClass: "gantt-peter" }, [
+              _c("p", { staticClass: "gantt--text" }, [_vm._v("Peter Parker")])
+            ])
+          ]),
           _vm._v(" "),
-          _c("tr", [_c("td", [_vm._v("Larry")])])
+          _c("tr", [
+            _c("td", [_vm._v("Task 2")]),
+            _vm._v(" "),
+            _c("td", { staticClass: "gantt-steve" }, [
+              _c("p", { staticClass: "gantt--text" }, [_vm._v("Steve Rodgers")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("tr", [
+            _c("td", [_vm._v("Task 3")]),
+            _vm._v(" "),
+            _c("td", { staticClass: " gantt-thor" }, [
+              _c("p", { staticClass: "gantt--text" }, [_vm._v("Thor Odinson")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("tr", [
+            _c("td", [_vm._v("Task 4")]),
+            _vm._v(" "),
+            _c("td", { staticClass: " gantt-hank" }, [
+              _c("p", { staticClass: "gantt--text" }, [_vm._v("Hank Pym")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("tr", [
+            _c("td", [_vm._v("Task 5")]),
+            _vm._v(" "),
+            _c("td", { staticClass: "gantt-banner" }, [
+              _c("p", { staticClass: "gantt--text" }, [_vm._v("Bruce Banner")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("tr", [
+            _c("td", [_vm._v("Task 6")]),
+            _vm._v(" "),
+            _c("td", { staticClass: "gantt-widow" }, [
+              _c("p", { staticClass: "gantt--text" }, [_vm._v("Black Widow")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("tr", [
+            _c("td", [_vm._v("Task 7")]),
+            _vm._v(" "),
+            _c("td", { staticClass: "gantt-stark" }, [
+              _c("p", { staticClass: "gantt--text" }, [_vm._v("Tony Stark")])
+            ])
+          ])
         ])
       ])
     ])
