@@ -18,12 +18,24 @@
   margin-top: 40px;
 }
 
+.padding--top-remove {
+  margin-bottom: -15px;
+}
+
 .pageSize {
   width: 800px;
 }
 
 body {
   background-color: #F8F9FA;
+}
+
+th {
+  word-break: break-word;
+}
+
+td {
+  work-break: break-word;
 }
 
 .router-link {
@@ -182,7 +194,12 @@ body {
   border-bottom: 1px solid #dee2e6;
 }
 
+.table-responsive-fix {
+  display: table;
+}
+
 .table__header {
+  width: 100%;
   background-color: #5cabdb;
   color: white;
 }
@@ -221,6 +238,8 @@ body {
   padding-right: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .form__pms-body {

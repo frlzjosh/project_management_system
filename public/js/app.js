@@ -51842,6 +51842,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -52086,88 +52095,115 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-12" }, [
-          _c("div", { staticClass: "padding--top-sm" }, [
-            _c("div", { staticClass: "table-component" }, [
-              _c("table", { staticClass: "table" }, [
-                _c("thead", [
-                  _c("tr", { staticClass: "table__header" }, [
-                    _c("th", [_vm._v("First")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Due Date")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("ID")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Assigned Resources")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Description")])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("tbody", [
-                  _c("tr", [
-                    _c("td", [_vm._v("Requirement 1")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("12/05/19")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("REQ-32")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Peter Parker")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Create Deliverables")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Requirement 2")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("12/01/19")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("REQ-33")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Thor")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Create Deliverables Creation Page")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Requirement 3")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("12/30/19")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("REQ-34")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Hank")]),
-                    _c("td"),
-                    _c("td", [_vm._v("Create Deliverables Editing Page")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Requirement 4")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("12/01/19")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("REQ-29")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Odin")]),
-                    _c("td"),
-                    _c("td", [
-                      _vm._v("Creating A Single Deliverables Display Page")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Requirement 5")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("12/10/19")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("REQ-31")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Steve")]),
-                    _c("td"),
-                    _c("td", [_vm._v("Task Display for Deliverables")])
-                  ])
-                ])
+      _c("div", { staticClass: "container-fluid no-padding" }, [
+        _c("div", { staticClass: "row padding--top-remove" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("h6", [_c("strong", [_vm._v("Related Requirements")])])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "padding--top-sm" }, [
+              _c("div", { staticClass: "table-component " }, [
+                _c(
+                  "div",
+                  { staticClass: "table-responsive table-responsive-fix" },
+                  [
+                    _c(
+                      "table",
+                      {
+                        staticClass:
+                          "w-100 d-block d-md-table table table-hover"
+                      },
+                      [
+                        _c("thead", [
+                          _c("tr", { staticClass: "table__header" }, [
+                            _c("th", [_vm._v("Title")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Due Date")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("ID")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Assigned Resource")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Description")])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tbody", [
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 1")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/05/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-32")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Peter")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Create Deliverables")])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 2")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/01/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-33")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Thor")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v("Create Deliverables Creation Page")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 3")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/30/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-34")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Hank")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v("Create Deliverables Editing Page")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 4")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/01/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-29")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Odin")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v(
+                                "Creating A Single Deliverables Display Page"
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 5")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/10/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-31")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Steve")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Task Display for Deliverables")])
+                          ])
+                        ])
+                      ]
+                    )
+                  ]
+                )
               ])
             ])
           ])

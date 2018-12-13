@@ -106,61 +106,70 @@
                     </div>
                 </div>
             </form>
-            <div class="row">
-                <div class="col-md-12">
+         <div class="container-fluid no-padding">
+             <div class="row padding--top-remove">
+                 <div class="col-md-12">
+                     <h6><strong>Related Requirements</strong></h6>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-md-12">
                     <div class="padding--top-sm">
-                        <div class="table-component">
-                            <table class="table">
+                        <div class="table-component ">
+                            <div class="table-responsive table-responsive-fix">
+                            <table class="w-100 d-block d-md-table table table-hover">
                                 <thead>
                                     <tr class="table__header">
-                                        <th>First</th>
+                                        <th>Title</th>
                                         <th>Due Date</th>
                                         <th>ID</th>
-                                        <th>Assigned Resources</th>
+                                        <th>Assigned Resource</th>
                                         <th>Description</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td >Requirement 1</td>
-                                        <td >12/05/19</td>
-                                        <td >REQ-32</td>
-                                        <td >Peter Parker</td>
-                                        <td >Create Deliverables</td>
+                                        <td>Requirement 1</td>
+                                        <td>12/05/19</td>
+                                        <td>REQ-32</td>
+                                        <td>Peter</td>
+                                        <td>Create Deliverables</td>
                                     </tr>
                                     <tr>
-                                        <td >Requirement 2</td>
-                                        <td >12/01/19</td>
-                                        <td >REQ-33</td>
-                                        <td >Thor</td>
+                                        <td>Requirement 2</td>
+                                        <td>12/01/19</td>
+                                        <td>REQ-33</td>
+                                        <td>Thor</td>
                                         <td>Create Deliverables Creation Page</td>
                                     </tr>
                                     <tr>
-                                        <td >Requirement 3</td>
+                                        <td>Requirement 3</td>
                                         <td >12/30/19</td>
-                                        <td >REQ-34</td>
-                                        <td >Hank<td>
+                                        <td>REQ-34</td>
+                                        <td>Hank</td>
                                         <td>Create Deliverables Editing Page</td>
                                     </tr>
                                     <tr>
-                                        <td >Requirement 4</td>
-                                        <td >12/01/19</td>
-                                        <td >REQ-29</td>
-                                        <td >Odin<td>
+                                        <td>Requirement 4</td>
+                                        <td>12/01/19</td>
+                                        <td>REQ-29</td>
+                                        <td>Odin</td>
                                         <td>Creating A Single Deliverables Display Page</td>
                                     </tr>
                                     <tr>
-                                        <td >Requirement 5</td>
-                                        <td >12/10/19</td>
-                                        <td >REQ-31</td>
-                                        <td >Steve<td>
+                                        <td>Requirement 5</td>
+                                        <td>12/10/19</td>
+                                        <td>REQ-31</td>
+                                        <td>Steve</td>
                                         <td>Task Display for Deliverables</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+                    </div>
                 </div>
+            </div>
             </div>
         </div>
         <!-- Modal -->
