@@ -1,0 +1,17 @@
+.form{
+    &__pms{
+        margin-top: 40px;
+        border: solid 1.5px whitesmoke;
+        border-radius: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        white-space: nowrap;
+        &-body{
+            margin-bottom: 10px;
+            height: 280px;
+        }
+    }
+}
