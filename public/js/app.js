@@ -48511,6 +48511,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
 /* harmony default export */ __webpack_exports__["a"] = ({
     test: '',
     rowCounter: 0
+    // resources: {'Peter Parker', 'Stever Rodgers', 'Thor Odinson', 'Hank Pym', 'Bruce Banner', 'Black Widow', 'Tony Stark'};
 });
 
 /***/ }),
@@ -53751,7 +53752,96 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -53797,7 +53887,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-6" }, [
           _c("h5", { staticClass: "pageSize__header--left" }, [
-            _c("strong", [_vm._v("Deliverables")])
+            _c("strong", [_vm._v("Issues")])
           ])
         ]),
         _vm._v(" "),
@@ -53812,7 +53902,7 @@ var staticRenderFns = [
                 "data-target": "#exampleModal"
               }
             },
-            [_vm._v("\n                    Create Task\n                ")]
+            [_vm._v("\n                    Add\n                ")]
           )
         ])
       ])
@@ -53825,73 +53915,99 @@ var staticRenderFns = [
     return _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-md-12" }, [
         _c("div", { staticClass: "table-component" }, [
-          _c("table", { staticClass: "table" }, [
-            _c("thead", [
-              _c("tr", { staticClass: "table__header" }, [
-                _c("th", [_vm._v("Title")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Due Date")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Completion")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Description")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("tbody", [
-              _c("tr", [
-                _c("td", [_vm._v("Deliverable Task 1")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("12/05/19")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("63%")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Create Deliverable Display Page")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Deliverable Task 2")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("12/10/19")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("23%")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Create Deliverables Creation Page")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Deliverable Task 3")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("12/30/19")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("90%")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Create Deliverables Editing Page")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Deliverable Task 4")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("12/01/19")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("57%")]),
-                _vm._v(" "),
-                _c("td", [
-                  _vm._v("Creating A Single Deliverables Display Page ")
+          _c(
+            "table",
+            { staticClass: "w-100 d-block d-md-table table table-hover" },
+            [
+              _c("thead", [
+                _c("tr", { staticClass: "table__header" }, [
+                  _c("th", [_vm._v("Title")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Date Raised")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Date Assigned")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Severity")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Priority")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Description")])
                 ])
               ]),
               _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Deliverable Task 5")]),
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", [_vm._v("Issues 1")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("6/10/19")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("12/05/19")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("High")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("High")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Create Issues")])
+                ]),
                 _vm._v(" "),
-                _c("td", [_vm._v("12/10/19")]),
+                _c("tr", [
+                  _c("td", [_vm._v("Issues 2")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("6/10/19")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("12/01/19")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Medium")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Low")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Create Issues Creation Page")])
+                ]),
                 _vm._v(" "),
-                _c("td", [_vm._v("25%")]),
+                _c("tr", [
+                  _c("td", [_vm._v("Issues 3")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("6/10/19")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("12/30/19")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Medium")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Low")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Create Issues Editing Page")])
+                ]),
                 _vm._v(" "),
-                _c("td", [_vm._v("Task Display for Deliverables")])
+                _c("tr", [
+                  _c("td", [_vm._v("Issues 4")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("6/10/19")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("12/01/19")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("High")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Medium")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Creating A Single Issues Display Page")])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Issues 5")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("6/10/19")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("12/10/19")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Medium")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Low")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Task Display for Issues")])
+                ])
               ])
-            ])
-          ])
+            ]
+          )
         ])
       ])
     ])
@@ -53904,29 +54020,55 @@ var staticRenderFns = [
       _c("form", [
         _c("div", { staticClass: "form__pms-header" }, [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-6" }, [
-              _c("p", [_c("strong", [_vm._v("ID: ")]), _vm._v(" SP-221")])
+            _c("div", { staticClass: "col-md-10" }, [
+              _c("p", [_c("strong", [_vm._v("ID: ")]), _vm._v(" SP-223")]),
+              _vm._v(" "),
+              _c("p", [
+                _c("strong", [_vm._v("Date Raised: ")]),
+                _vm._v(" 6/30/19")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _c("strong", [_vm._v("Estimated Duration: ")]),
+                _vm._v(" 6/30/19 - 12/03/19 (6 MO.)")
+              ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-6 type--right" }, [
+            _c("div", { staticClass: "col-md-2 type--right" }, [
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-outline-success",
+                  staticClass: "btn btn-outline-danger",
                   attrs: { type: "button" }
                 },
-                [_vm._v("Active")]
+                [_vm._v("Closed")]
               )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-6" }, [
+              _c("p", [
+                _c("strong", [_vm._v("Estimated End Date: ")]),
+                _vm._v("12/03/19")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6" }, [
+              _c("p", [
+                _c("strong", [_vm._v("Actual End Date: ")]),
+                _vm._v(" 12/10/19")
+              ])
             ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "form__pms-body" }, [
+        _c("div", { staticClass: "form__pms-body--md" }, [
           _c("div", { staticClass: "form-group" }, [
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-md-9" }, [
-                _c("label", { attrs: { for: "titleOfDeliverable" } }, [
-                  _vm._v("Title")
+                _c("label", { attrs: { for: "titleOfIssue" } }, [
+                  _c("strong", [_vm._v("Title")])
                 ]),
                 _vm._v(" "),
                 _c("input", {
@@ -53934,35 +54076,278 @@ var staticRenderFns = [
                   attrs: {
                     type: "email",
                     id: "titleOfDeliverable",
-                    placeholder: "Enter Deliverable"
+                    placeholder: "Enter Issue"
                   }
                 })
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "col-md-3" }, [
-                _c("label", { attrs: { for: "dueDateDeliverable" } }, [
-                  _vm._v("Due Date")
+                _c("label", { attrs: { for: "relatedTask" } }, [
+                  _c("strong", [_vm._v("Related Task")])
                 ]),
                 _vm._v(" "),
                 _c("input", {
                   staticClass: "form-control",
                   attrs: {
                     type: "email",
-                    id: "expectedStartDate",
+                    id: "relatedTask",
                     "aria-describedby": "emailHelp",
-                    placeholder: "Start"
+                    placeholder: "Related Task"
                   }
                 })
               ])
             ])
           ]),
           _vm._v(" "),
+          _c("div", { staticClass: "row padding--top-sm" }, [
+            _c("div", { staticClass: "col-md-6" }, [
+              _c("div", { staticClass: "dropdown" }, [
+                _c("h6", [_c("strong", [_vm._v("Resource")])]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary dropdown-toggle",
+                    attrs: {
+                      type: "button",
+                      id: "dropdownMenuButton",
+                      "data-toggle": "dropdown",
+                      "aria-haspopup": "true",
+                      "aria-expanded": "false"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                                Choose Resource\n                            "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "dropdown-menu",
+                    attrs: { "aria-labelledby": "dropdownMenuButton" }
+                  },
+                  [
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Peter Parker")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Stever Rodgers")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Thor Odinson")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Hank Pym")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Bruce Banner")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Black Widow")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Tony Stark")]
+                    )
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3" }, [
+              _c("div", { staticClass: "dropdown" }, [
+                _c("h6", [_c("strong", [_vm._v("Priority")])]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary dropdown-toggle",
+                    attrs: {
+                      type: "button",
+                      id: "dropdownMenuButton",
+                      "data-toggle": "dropdown",
+                      "aria-haspopup": "true",
+                      "aria-expanded": "false"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                                Priority\n                            "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "dropdown-menu",
+                    attrs: { "aria-labelledby": "dropdownMenuButton" }
+                  },
+                  [
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Low")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Medium")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("High")]
+                    )
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3" }, [
+              _c("div", { staticClass: "dropdown" }, [
+                _c("h6", [_c("strong", [_vm._v("Severity")])]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary dropdown-toggle",
+                    attrs: {
+                      type: "button",
+                      id: "dropdownMenuButton",
+                      "data-toggle": "dropdown",
+                      "aria-haspopup": "true",
+                      "aria-expanded": "false"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                                Severity\n                            "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "dropdown-menu",
+                    attrs: { "aria-labelledby": "dropdownMenuButton" }
+                  },
+                  [
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Low")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Medium")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("High")]
+                    )
+                  ]
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-5" }, [
+              _c("div", { staticClass: "dropdown" }, [
+                _c("h6", [_c("strong", [_vm._v("Status")])]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary dropdown-toggle",
+                    attrs: {
+                      type: "button",
+                      id: "dropdownMenuButton",
+                      "data-toggle": "dropdown",
+                      "aria-haspopup": "true",
+                      "aria-expanded": "false"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                                Status\n                            "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "dropdown-menu",
+                    attrs: { "aria-labelledby": "dropdownMenuButton" }
+                  },
+                  [
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Open")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { staticClass: "dropdown-item", attrs: { href: "#" } },
+                      [_vm._v("Closed")]
+                    )
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-7" }, [
+              _c("label", { attrs: { for: "titleOfIssue" } }, [
+                _c("strong", [_vm._v("Title")])
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "email",
+                  id: "titleOfDeliverable",
+                  placeholder: "Enter Issue"
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
           _c("div", { staticClass: "form-group" }, [
             _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-12 padding--top " }, [
-                _c("label", { attrs: { for: "descriptionOfDeliverable" } }, [
-                  _c("strong", [_vm._v("Deliverable")])
-                ]),
+              _c("div", { staticClass: "col-md-12 padding--top-sm" }, [
+                _c("h6", [_c("strong", [_vm._v("Description")])]),
                 _vm._v(" "),
                 _c("textarea", {
                   staticClass: "form-control",
@@ -54021,11 +54406,13 @@ var staticRenderFns = [
                           _c("tr", { staticClass: "table__header" }, [
                             _c("th", [_vm._v("Title")]),
                             _vm._v(" "),
-                            _c("th", [_vm._v("Due Date")]),
+                            _c("th", [_vm._v("Date Raised")]),
                             _vm._v(" "),
-                            _c("th", [_vm._v("ID")]),
+                            _c("th", [_vm._v("Date Assigned")]),
                             _vm._v(" "),
-                            _c("th", [_vm._v("Assigned Resource")]),
+                            _c("th", [_vm._v("Severity")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Priority")]),
                             _vm._v(" "),
                             _c("th", [_vm._v("Description")])
                           ])
@@ -54033,71 +54420,75 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("tbody", [
                           _c("tr", [
-                            _c("td", [_vm._v("Requirement 1")]),
+                            _c("td", [_vm._v("Issues 1")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("6/10/19")]),
                             _vm._v(" "),
                             _c("td", [_vm._v("12/05/19")]),
                             _vm._v(" "),
-                            _c("td", [_vm._v("REQ-32")]),
+                            _c("td", [_vm._v("High")]),
                             _vm._v(" "),
-                            _c("td", [_vm._v("Peter")]),
+                            _c("td", [_vm._v("High")]),
                             _vm._v(" "),
-                            _c("td", [_vm._v("Create Deliverables")])
+                            _c("td", [_vm._v("Create Issues")])
                           ]),
                           _vm._v(" "),
                           _c("tr", [
-                            _c("td", [_vm._v("Requirement 2")]),
+                            _c("td", [_vm._v("Issues 2")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("6/10/19")]),
                             _vm._v(" "),
                             _c("td", [_vm._v("12/01/19")]),
                             _vm._v(" "),
-                            _c("td", [_vm._v("REQ-33")]),
+                            _c("td", [_vm._v("Medium")]),
                             _vm._v(" "),
-                            _c("td", [_vm._v("Thor")]),
+                            _c("td", [_vm._v("Low")]),
                             _vm._v(" "),
-                            _c("td", [
-                              _vm._v("Create Deliverables Creation Page")
-                            ])
+                            _c("td", [_vm._v("Create Issues Creation Page")])
                           ]),
                           _vm._v(" "),
                           _c("tr", [
-                            _c("td", [_vm._v("Requirement 3")]),
+                            _c("td", [_vm._v("Issues 3")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("6/10/19")]),
                             _vm._v(" "),
                             _c("td", [_vm._v("12/30/19")]),
                             _vm._v(" "),
-                            _c("td", [_vm._v("REQ-34")]),
+                            _c("td", [_vm._v("Medium")]),
                             _vm._v(" "),
-                            _c("td", [_vm._v("Hank")]),
+                            _c("td", [_vm._v("Low")]),
                             _vm._v(" "),
-                            _c("td", [
-                              _vm._v("Create Deliverables Editing Page")
-                            ])
+                            _c("td", [_vm._v("Create Issues Editing Page")])
                           ]),
                           _vm._v(" "),
                           _c("tr", [
-                            _c("td", [_vm._v("Requirement 4")]),
+                            _c("td", [_vm._v("Issues 4")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("6/10/19")]),
                             _vm._v(" "),
                             _c("td", [_vm._v("12/01/19")]),
                             _vm._v(" "),
-                            _c("td", [_vm._v("REQ-29")]),
+                            _c("td", [_vm._v("High")]),
                             _vm._v(" "),
-                            _c("td", [_vm._v("Odin")]),
+                            _c("td", [_vm._v("Medium")]),
                             _vm._v(" "),
                             _c("td", [
-                              _vm._v(
-                                "Creating A Single Deliverables Display Page"
-                              )
+                              _vm._v("Creating A Single Issues Display Page")
                             ])
                           ]),
                           _vm._v(" "),
                           _c("tr", [
-                            _c("td", [_vm._v("Requirement 5")]),
+                            _c("td", [_vm._v("Issues 5")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("6/10/19")]),
                             _vm._v(" "),
                             _c("td", [_vm._v("12/10/19")]),
                             _vm._v(" "),
-                            _c("td", [_vm._v("REQ-31")]),
+                            _c("td", [_vm._v("Medium")]),
                             _vm._v(" "),
-                            _c("td", [_vm._v("Steve")]),
+                            _c("td", [_vm._v("Low")]),
                             _vm._v(" "),
-                            _c("td", [_vm._v("Task Display for Deliverables")])
+                            _c("td", [_vm._v("Task Display for Issues")])
                           ])
                         ])
                       ]
@@ -54275,7 +54666,7 @@ var staticRenderFns = [
                             staticClass: "btn btn-info",
                             attrs: { type: "button" }
                           },
-                          [_vm._v("Create task")]
+                          [_vm._v("Add ")]
                         )
                       ])
                     ])

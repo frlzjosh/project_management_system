@@ -261,6 +261,15 @@ td {
   height: 280px;
 }
 
+.form__pms-body--md {
+  height: 400px;
+}
+
+.dropdown-toggle {
+  background-color: white !important;
+  color: black !important;
+}
+
 .pageSize {
   width: 800px;
 }
