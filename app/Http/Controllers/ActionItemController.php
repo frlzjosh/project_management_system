@@ -24,7 +24,6 @@ class ActionItemController extends Controller
      */
     public function create()
     {
-        //
     }
 
     /**
@@ -35,7 +34,20 @@ class ActionItemController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $actionItem = new ActionItem();
+        $actionItem->name = $request->name;        
+        $actionItem->description = $request->description;
+        $actionItem->date_created = $request->date_created;
+        $actionItem->date_assigned = $request->date_assigned;
+        $actionItem->resource_assigned = $request->resource_assigned;                
+        $actionItem->expected_completion_date = $request->expected_completion_date;
+        $actionItem->actual_completion_date = $request->actual_completion_date;
+        $actionItem->status = $request->status;
+        $actionItem->status_description = $request->status_description;        
+
+        $actionItem->save();
+        return response('ActionItem Added successfully', 200)
+        ->header('Content-Type', 'text/plain');
     }
 
     /**
@@ -67,9 +79,21 @@ class ActionItemController extends Controller
      * @param  \App\ActionItem  $actionItem
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ActionItem $actionItem)
+    public function update($id ,Request $request)
     {
-        //
+        $actionItem = ActionItem::find($id);  
+        $actionItem->name = $request->name ? $request->name : $actionItem->name;
+        $actionItem->description = $request->description ? $request->description : $actionItem->description;
+        $actionItem->date_created = $request->date_created ? $request->date_created : $actionItem->date_created; 
+        $actionItem->date_assigned = $request->date_assigned ? $request->date_assigned :  $actionItem->date_assigned;
+        $actionItem->resource_assigned = $request->resource_assigned ? $request->resource_assigned : $actionItem->resource_assigned;               
+        $actionItem->expected_completion_date = $request->expected_completion_date? $request->expected_completion_date : $actionItem->expected_completion_date;
+        $actionItem->actual_completion_date = $request->actual_completion_date ? $request->actual_completion_date : $actionItem->actual_completion_date;
+        $actionItem->status = $request->status ? $request->status :  $actionItem->status;
+        $actionItem->status_description = $request->status_description ? $request->status_description : $actionItem->status_description;
+        $actionItem->save();
+        return response('Action Item Updated successfully', 200)
+        ->header('Content-Type', 'text/plain');
     }
 
     /**

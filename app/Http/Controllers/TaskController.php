@@ -35,7 +35,13 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $task = new Task();
+        $task->name = $request->name;
+        $task->description = $request->description;
+        $task->resource_assigned = $request->resource_assigned;
+        $task->save();
+        return response('Task Added successfully', 200)
+        ->header('Content-Type', 'text/plain');
     }
 
     /**
@@ -67,9 +73,15 @@ class TaskController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update($id ,Request $request)
     {
-        //
+        $task = Task::find($id);  
+        $task->name = $request->name ? $request->name : $task->name;
+        $task->description = $request->description ? $request->description : $task->description;
+        $task->resource_assigned = $request->resource_assigned ? $request->resource_assigned :  $task->resource_assigned;
+        $task->save();
+        return response('Task Updated successfully', 200)
+        ->header('Content-Type', 'text/plain');
     }
 
     /**
