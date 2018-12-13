@@ -6,8 +6,24 @@
   text-align: center;
 }
 
+.type--right {
+  text-align: right;
+}
+
+.padding--top-sm {
+  margin-top: 20px;
+}
+
+.padding--top-md {
+  margin-top: 40px;
+}
+
 .pageSize {
   width: 800px;
+}
+
+body {
+  background-color: #F8F9FA;
 }
 
 .router-link {
@@ -161,6 +177,11 @@
   cursor: pointer;
 }
 
+.table-component {
+  margin-top: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
 .table__header {
   background-color: #5cabdb;
   color: white;
@@ -190,6 +211,21 @@
 .subHeader {
   margin-top: 20px;
   margin-bottom: 35px;
+}
+
+.form__pms {
+  margin-top: 40px;
+  border: solid 1.5px whitesmoke;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form__pms-body {
+  margin-bottom: 10px;
+  height: 280px;
 }
 
 .pageSize {

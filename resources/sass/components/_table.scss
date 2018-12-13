@@ -1,4 +1,8 @@
 .table{
+    &-component{
+        margin-top: 15px;
+        border-bottom: 1px solid #dee2e6;
+    }
     &__header{
         background-color: #5cabdb;
         color: white;
