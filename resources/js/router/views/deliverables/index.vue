@@ -3,13 +3,13 @@
         <div class="row">
             <sub-header></sub-header>
         </div>
-        <div class="del__header">
+        <div class="pageSize__header">
             <div class="row">
                 <div class="col-md-6">
-                    <h5 class="del__header--left"><strong>Deliverables</strong></h5>
+                    <h5 class="pageSize__header--left"><strong>Deliverables</strong></h5>
                 </div>
                 <div class="col-md-6">
-                    <button type="button" class="btn btn-primary del__header--right" data-toggle="modal" data-target="#exampleModal">
+                    <button type="button" class="btn btn-primary pageSize__header--right" data-toggle="modal" data-target="#exampleModal">
                         Create Task
                     </button>
                 </div>
@@ -100,7 +100,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12 type--right padding--top-sm">
-                                <button type="button" class="btn btn-primary del__header--right">Confirm Edits</button>
+                                <button type="button" class="btn btn-primary pageSize__header--right">Confirm Edits</button>
                             </div>
                         </div>
                     </div>

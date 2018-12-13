@@ -51893,10 +51893,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "del__header" }, [
+    return _c("div", { staticClass: "pageSize__header" }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-6" }, [
-          _c("h5", { staticClass: "del__header--left" }, [
+          _c("h5", { staticClass: "pageSize__header--left" }, [
             _c("strong", [_vm._v("Deliverables")])
           ])
         ]),
@@ -51905,7 +51905,7 @@ var staticRenderFns = [
           _c(
             "button",
             {
-              staticClass: "btn btn-primary del__header--right",
+              staticClass: "btn btn-primary pageSize__header--right",
               attrs: {
                 type: "button",
                 "data-toggle": "modal",
@@ -52083,7 +52083,7 @@ var staticRenderFns = [
                   _c(
                     "button",
                     {
-                      staticClass: "btn btn-primary del__header--right",
+                      staticClass: "btn btn-primary pageSize__header--right",
                       attrs: { type: "button" }
                     },
                     [_vm._v("Confirm Edits")]
@@ -52466,13 +52466,243 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     components: {
         subHeader: __WEBPACK_IMPORTED_MODULE_0__components_global_subHeader_vue___default.a
+    },
+    methods: {
+        showModal: function showModal() {
+            $('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus');
+            });
+        }
     }
+
 });
 
 /***/ }),
@@ -52484,12 +52714,15 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "pageSize" }, [
-    _c(
-      "div",
-      { staticClass: "col-md-12" },
-      [_c("sub-header"), _vm._v(" "), _vm._m(0)],
-      1
-    )
+    _c("div", { staticClass: "row" }, [_c("sub-header")], 1),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3)
   ])
 }
 var staticRenderFns = [
@@ -52497,8 +52730,499 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "pageSize__header" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("h5", { staticClass: "pageSize__header--left" }, [
+            _c("strong", [_vm._v("Deliverables")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-primary pageSize__header--right",
+              attrs: {
+                type: "button",
+                "data-toggle": "modal",
+                "data-target": "#exampleModal"
+              }
+            },
+            [_vm._v("\n                    Create Task\n                ")]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-12" })
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "table-component" }, [
+          _c("table", { staticClass: "table" }, [
+            _c("thead", [
+              _c("tr", { staticClass: "table__header" }, [
+                _c("th", [_vm._v("Title")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Due Date")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Completion")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Description")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/05/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("63%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Create Deliverable Display Page")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 2")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/10/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("23%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Create Deliverables Creation Page")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 3")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/30/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("90%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Create Deliverables Editing Page")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/01/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("57%")]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v("Creating A Single Deliverables Display Page ")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 5")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/10/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("25%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Task Display for Deliverables")])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form__pms" }, [
+      _c("form", [
+        _c("div", { staticClass: "form__pms-header" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-6" }, [
+              _c("p", [_c("strong", [_vm._v("ID: ")]), _vm._v(" SP-221")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6 type--right" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-outline-success",
+                  attrs: { type: "button" }
+                },
+                [_vm._v("Active")]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form__pms-body" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-9" }, [
+                _c("label", { attrs: { for: "titleOfDeliverable" } }, [
+                  _vm._v("Title")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "email",
+                    id: "titleOfDeliverable",
+                    placeholder: "Enter Deliverable"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-3" }, [
+                _c("label", { attrs: { for: "dueDateDeliverable" } }, [
+                  _vm._v("Due Date")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "email",
+                    id: "expectedStartDate",
+                    "aria-describedby": "emailHelp",
+                    placeholder: "Start"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-12 padding--top " }, [
+                _c("label", { attrs: { for: "descriptionOfDeliverable" } }, [
+                  _c("strong", [_vm._v("Deliverable")])
+                ]),
+                _vm._v(" "),
+                _c("textarea", {
+                  staticClass: "form-control",
+                  attrs: {
+                    id: "description",
+                    rows: "3",
+                    placeholder: "Enter Description..."
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-12 type--right padding--top-sm" },
+                [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary pageSize__header--right",
+                      attrs: { type: "button" }
+                    },
+                    [_vm._v("Confirm Edits")]
+                  )
+                ]
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container-fluid no-padding" }, [
+        _c("div", { staticClass: "row padding--top-remove" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("h6", [_c("strong", [_vm._v("Related Requirements")])])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "padding--top-sm" }, [
+              _c("div", { staticClass: "table-component " }, [
+                _c(
+                  "div",
+                  { staticClass: "table-responsive table-responsive-fix" },
+                  [
+                    _c(
+                      "table",
+                      {
+                        staticClass:
+                          "w-100 d-block d-md-table table table-hover"
+                      },
+                      [
+                        _c("thead", [
+                          _c("tr", { staticClass: "table__header" }, [
+                            _c("th", [_vm._v("Title")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Due Date")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("ID")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Assigned Resource")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Description")])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tbody", [
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 1")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/05/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-32")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Peter")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Create Deliverables")])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 2")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/01/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-33")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Thor")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v("Create Deliverables Creation Page")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 3")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/30/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-34")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Hank")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v("Create Deliverables Editing Page")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 4")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/01/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-29")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Odin")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v(
+                                "Creating A Single Deliverables Display Page"
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 5")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/10/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-31")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Steve")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Task Display for Deliverables")])
+                          ])
+                        ])
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: {
+            id: "exampleModal",
+            tabindex: "-1",
+            role: "dialog",
+            "aria-labelledby": "exampleModalLabel",
+            "aria-hidden": "true"
+          }
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "modal-dialog", attrs: { role: "document" } },
+            [
+              _c("div", { staticClass: "modal-content" }, [
+                _c("div", { staticClass: "modal-header table__header" }, [
+                  _c(
+                    "h5",
+                    {
+                      staticClass: "modal-title",
+                      attrs: { id: "exampleModalLabel" }
+                    },
+                    [_vm._v("Task Creation")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "close",
+                      attrs: {
+                        type: "button",
+                        "data-dismiss": "modal",
+                        "aria-label": "Close"
+                      }
+                    },
+                    [
+                      _c("span", { attrs: { "aria-hidden": "true" } }, [
+                        _vm._v("×")
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body" }, [
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-8" }, [
+                        _c("label", { attrs: { for: "exampleInputEmail1" } }, [
+                          _vm._v("Name ")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "title",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Enter title"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-4" }, [
+                        _c("label", { attrs: { for: "exampleInputEmail1" } }, [
+                          _vm._v("Date")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "dueDate",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Due Date"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12 padding--top " }, [
+                        _c("textarea", {
+                          staticClass: "form-control",
+                          attrs: {
+                            id: "description",
+                            rows: "3",
+                            placeholder: "Enter Description..."
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "assignResource",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Assign Resource"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "expectedStartDate",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Start"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "expectedDueDate",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "End"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-6 padding--top" }, [
+                        _c("p", [_vm._v("Expected Duration: 0 Weeks")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-9 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "relatedIssues",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Related Issues"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-info",
+                            attrs: { type: "button" }
+                          },
+                          [_vm._v("Create task")]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ]
+      )
     ])
   }
 ]
@@ -52805,13 +53529,243 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     components: {
         subHeader: __WEBPACK_IMPORTED_MODULE_0__components_global_subHeader_vue___default.a
+    },
+    methods: {
+        showModal: function showModal() {
+            $('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus');
+            });
+        }
     }
+
 });
 
 /***/ }),
@@ -52823,12 +53777,15 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "pageSize" }, [
-    _c(
-      "div",
-      { staticClass: "col-md-12" },
-      [_c("sub-header"), _vm._v(" "), _vm._m(0)],
-      1
-    )
+    _c("div", { staticClass: "row" }, [_c("sub-header")], 1),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3)
   ])
 }
 var staticRenderFns = [
@@ -52836,8 +53793,499 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "pageSize__header" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("h5", { staticClass: "pageSize__header--left" }, [
+            _c("strong", [_vm._v("Deliverables")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-primary pageSize__header--right",
+              attrs: {
+                type: "button",
+                "data-toggle": "modal",
+                "data-target": "#exampleModal"
+              }
+            },
+            [_vm._v("\n                    Create Task\n                ")]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-12" })
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "table-component" }, [
+          _c("table", { staticClass: "table" }, [
+            _c("thead", [
+              _c("tr", { staticClass: "table__header" }, [
+                _c("th", [_vm._v("Title")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Due Date")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Completion")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Description")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/05/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("63%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Create Deliverable Display Page")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 2")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/10/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("23%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Create Deliverables Creation Page")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 3")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/30/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("90%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Create Deliverables Editing Page")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/01/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("57%")]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v("Creating A Single Deliverables Display Page ")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 5")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/10/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("25%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Task Display for Deliverables")])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form__pms" }, [
+      _c("form", [
+        _c("div", { staticClass: "form__pms-header" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-6" }, [
+              _c("p", [_c("strong", [_vm._v("ID: ")]), _vm._v(" SP-221")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6 type--right" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-outline-success",
+                  attrs: { type: "button" }
+                },
+                [_vm._v("Active")]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form__pms-body" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-9" }, [
+                _c("label", { attrs: { for: "titleOfDeliverable" } }, [
+                  _vm._v("Title")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "email",
+                    id: "titleOfDeliverable",
+                    placeholder: "Enter Deliverable"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-3" }, [
+                _c("label", { attrs: { for: "dueDateDeliverable" } }, [
+                  _vm._v("Due Date")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "email",
+                    id: "expectedStartDate",
+                    "aria-describedby": "emailHelp",
+                    placeholder: "Start"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-12 padding--top " }, [
+                _c("label", { attrs: { for: "descriptionOfDeliverable" } }, [
+                  _c("strong", [_vm._v("Deliverable")])
+                ]),
+                _vm._v(" "),
+                _c("textarea", {
+                  staticClass: "form-control",
+                  attrs: {
+                    id: "description",
+                    rows: "3",
+                    placeholder: "Enter Description..."
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-12 type--right padding--top-sm" },
+                [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary pageSize__header--right",
+                      attrs: { type: "button" }
+                    },
+                    [_vm._v("Confirm Edits")]
+                  )
+                ]
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container-fluid no-padding" }, [
+        _c("div", { staticClass: "row padding--top-remove" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("h6", [_c("strong", [_vm._v("Related Requirements")])])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "padding--top-sm" }, [
+              _c("div", { staticClass: "table-component " }, [
+                _c(
+                  "div",
+                  { staticClass: "table-responsive table-responsive-fix" },
+                  [
+                    _c(
+                      "table",
+                      {
+                        staticClass:
+                          "w-100 d-block d-md-table table table-hover"
+                      },
+                      [
+                        _c("thead", [
+                          _c("tr", { staticClass: "table__header" }, [
+                            _c("th", [_vm._v("Title")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Due Date")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("ID")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Assigned Resource")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Description")])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tbody", [
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 1")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/05/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-32")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Peter")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Create Deliverables")])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 2")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/01/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-33")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Thor")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v("Create Deliverables Creation Page")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 3")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/30/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-34")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Hank")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v("Create Deliverables Editing Page")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 4")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/01/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-29")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Odin")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v(
+                                "Creating A Single Deliverables Display Page"
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 5")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/10/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-31")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Steve")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Task Display for Deliverables")])
+                          ])
+                        ])
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: {
+            id: "exampleModal",
+            tabindex: "-1",
+            role: "dialog",
+            "aria-labelledby": "exampleModalLabel",
+            "aria-hidden": "true"
+          }
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "modal-dialog", attrs: { role: "document" } },
+            [
+              _c("div", { staticClass: "modal-content" }, [
+                _c("div", { staticClass: "modal-header table__header" }, [
+                  _c(
+                    "h5",
+                    {
+                      staticClass: "modal-title",
+                      attrs: { id: "exampleModalLabel" }
+                    },
+                    [_vm._v("Task Creation")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "close",
+                      attrs: {
+                        type: "button",
+                        "data-dismiss": "modal",
+                        "aria-label": "Close"
+                      }
+                    },
+                    [
+                      _c("span", { attrs: { "aria-hidden": "true" } }, [
+                        _vm._v("×")
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body" }, [
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-8" }, [
+                        _c("label", { attrs: { for: "exampleInputEmail1" } }, [
+                          _vm._v("Name ")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "title",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Enter title"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-4" }, [
+                        _c("label", { attrs: { for: "exampleInputEmail1" } }, [
+                          _vm._v("Date")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "dueDate",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Due Date"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12 padding--top " }, [
+                        _c("textarea", {
+                          staticClass: "form-control",
+                          attrs: {
+                            id: "description",
+                            rows: "3",
+                            placeholder: "Enter Description..."
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "assignResource",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Assign Resource"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "expectedStartDate",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Start"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "expectedDueDate",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "End"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-6 padding--top" }, [
+                        _c("p", [_vm._v("Expected Duration: 0 Weeks")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-9 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "relatedIssues",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Related Issues"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-info",
+                            attrs: { type: "button" }
+                          },
+                          [_vm._v("Create task")]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ]
+      )
     ])
   }
 ]
@@ -53257,13 +54705,243 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     components: {
         subHeader: __WEBPACK_IMPORTED_MODULE_0__components_global_subHeader_vue___default.a
+    },
+    methods: {
+        showModal: function showModal() {
+            $('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus');
+            });
+        }
     }
+
 });
 
 /***/ }),
@@ -53275,12 +54953,15 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "pageSize" }, [
-    _c(
-      "div",
-      { staticClass: "col-md-12" },
-      [_c("sub-header"), _vm._v(" "), _vm._m(0)],
-      1
-    )
+    _c("div", { staticClass: "row" }, [_c("sub-header")], 1),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3)
   ])
 }
 var staticRenderFns = [
@@ -53288,8 +54969,499 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "pageSize__header" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("h5", { staticClass: "pageSize__header--left" }, [
+            _c("strong", [_vm._v("Deliverables")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-primary pageSize__header--right",
+              attrs: {
+                type: "button",
+                "data-toggle": "modal",
+                "data-target": "#exampleModal"
+              }
+            },
+            [_vm._v("\n                    Create Task\n                ")]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-12" })
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "table-component" }, [
+          _c("table", { staticClass: "table" }, [
+            _c("thead", [
+              _c("tr", { staticClass: "table__header" }, [
+                _c("th", [_vm._v("Title")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Due Date")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Completion")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Description")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/05/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("63%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Create Deliverable Display Page")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 2")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/10/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("23%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Create Deliverables Creation Page")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 3")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/30/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("90%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Create Deliverables Editing Page")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/01/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("57%")]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v("Creating A Single Deliverables Display Page ")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Deliverable Task 5")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/10/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("25%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Task Display for Deliverables")])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form__pms" }, [
+      _c("form", [
+        _c("div", { staticClass: "form__pms-header" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-6" }, [
+              _c("p", [_c("strong", [_vm._v("ID: ")]), _vm._v(" SP-221")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6 type--right" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-outline-success",
+                  attrs: { type: "button" }
+                },
+                [_vm._v("Active")]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form__pms-body" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-9" }, [
+                _c("label", { attrs: { for: "titleOfDeliverable" } }, [
+                  _vm._v("Title")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "email",
+                    id: "titleOfDeliverable",
+                    placeholder: "Enter Deliverable"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-3" }, [
+                _c("label", { attrs: { for: "dueDateDeliverable" } }, [
+                  _vm._v("Due Date")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "email",
+                    id: "expectedStartDate",
+                    "aria-describedby": "emailHelp",
+                    placeholder: "Start"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-12 padding--top " }, [
+                _c("label", { attrs: { for: "descriptionOfDeliverable" } }, [
+                  _c("strong", [_vm._v("Deliverable")])
+                ]),
+                _vm._v(" "),
+                _c("textarea", {
+                  staticClass: "form-control",
+                  attrs: {
+                    id: "description",
+                    rows: "3",
+                    placeholder: "Enter Description..."
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-12 type--right padding--top-sm" },
+                [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary pageSize__header--right",
+                      attrs: { type: "button" }
+                    },
+                    [_vm._v("Confirm Edits")]
+                  )
+                ]
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container-fluid no-padding" }, [
+        _c("div", { staticClass: "row padding--top-remove" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("h6", [_c("strong", [_vm._v("Related Requirements")])])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "padding--top-sm" }, [
+              _c("div", { staticClass: "table-component " }, [
+                _c(
+                  "div",
+                  { staticClass: "table-responsive table-responsive-fix" },
+                  [
+                    _c(
+                      "table",
+                      {
+                        staticClass:
+                          "w-100 d-block d-md-table table table-hover"
+                      },
+                      [
+                        _c("thead", [
+                          _c("tr", { staticClass: "table__header" }, [
+                            _c("th", [_vm._v("Title")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Due Date")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("ID")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Assigned Resource")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Description")])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tbody", [
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 1")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/05/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-32")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Peter")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Create Deliverables")])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 2")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/01/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-33")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Thor")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v("Create Deliverables Creation Page")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 3")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/30/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-34")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Hank")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v("Create Deliverables Editing Page")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 4")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/01/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-29")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Odin")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v(
+                                "Creating A Single Deliverables Display Page"
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Requirement 5")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/10/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("REQ-31")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Steve")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Task Display for Deliverables")])
+                          ])
+                        ])
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: {
+            id: "exampleModal",
+            tabindex: "-1",
+            role: "dialog",
+            "aria-labelledby": "exampleModalLabel",
+            "aria-hidden": "true"
+          }
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "modal-dialog", attrs: { role: "document" } },
+            [
+              _c("div", { staticClass: "modal-content" }, [
+                _c("div", { staticClass: "modal-header table__header" }, [
+                  _c(
+                    "h5",
+                    {
+                      staticClass: "modal-title",
+                      attrs: { id: "exampleModalLabel" }
+                    },
+                    [_vm._v("Task Creation")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "close",
+                      attrs: {
+                        type: "button",
+                        "data-dismiss": "modal",
+                        "aria-label": "Close"
+                      }
+                    },
+                    [
+                      _c("span", { attrs: { "aria-hidden": "true" } }, [
+                        _vm._v("×")
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body" }, [
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-8" }, [
+                        _c("label", { attrs: { for: "exampleInputEmail1" } }, [
+                          _vm._v("Name ")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "title",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Enter title"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-4" }, [
+                        _c("label", { attrs: { for: "exampleInputEmail1" } }, [
+                          _vm._v("Date")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "dueDate",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Due Date"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12 padding--top " }, [
+                        _c("textarea", {
+                          staticClass: "form-control",
+                          attrs: {
+                            id: "description",
+                            rows: "3",
+                            placeholder: "Enter Description..."
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "assignResource",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Assign Resource"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "expectedStartDate",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Start"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "expectedDueDate",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "End"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-6 padding--top" }, [
+                        _c("p", [_vm._v("Expected Duration: 0 Weeks")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-9 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "relatedIssues",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Related Issues"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-info",
+                            attrs: { type: "button" }
+                          },
+                          [_vm._v("Create task")]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ]
+      )
     ])
   }
 ]
@@ -53370,13 +55542,262 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     components: {
         subHeader: __WEBPACK_IMPORTED_MODULE_0__components_global_subHeader_vue___default.a
+    },
+    methods: {
+        showModal: function showModal() {
+            $('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus');
+            });
+        }
     }
+
 });
 
 /***/ }),
@@ -53388,12 +55809,15 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "pageSize" }, [
-    _c(
-      "div",
-      { staticClass: "col-md-12" },
-      [_c("sub-header"), _vm._v(" "), _vm._m(0)],
-      1
-    )
+    _c("div", { staticClass: "row" }, [_c("sub-header")], 1),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3)
   ])
 }
 var staticRenderFns = [
@@ -53401,8 +55825,534 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "pageSize__header" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("h5", { staticClass: "pageSize__header--left" }, [
+            _c("strong", [_vm._v("Tasks")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-primary pageSize__header--right",
+              attrs: {
+                type: "button",
+                "data-toggle": "modal",
+                "data-target": "#exampleModal"
+              }
+            },
+            [_vm._v("\n                    Create Task\n                ")]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-12" })
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "table-component" }, [
+          _c("table", { staticClass: "table" }, [
+            _c("thead", [
+              _c("tr", { staticClass: "table__header" }, [
+                _c("th", [_vm._v("Title")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Due Date")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Completion")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Assigned Resource")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Description")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("td", [_vm._v("Task 1")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/05/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("63%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Create Tasks Display Page")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Steve")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Task 2")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/10/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("23%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Create Tasks Creation Page")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Hank")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Task 3")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/30/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("90%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Create Tasks Editing Page")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Banner")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Task 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/01/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("57%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Creating A Single Tasks Display Page ")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Thor")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Task 5")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("12/10/19")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("25%")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Resource Display for Tasks")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Peter")])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form__pms" }, [
+      _c("form", [
+        _c("div", { staticClass: "form__pms-header" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-10" }, [
+              _c("p", [_c("strong", [_vm._v("ID: ")]), _vm._v(" SP-223")]),
+              _vm._v(" "),
+              _c("p", [
+                _c("strong", [_vm._v("Estimated Duration: ")]),
+                _vm._v(" 6/30/19 - 12/03/19 (6 MO.)")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-2 type--right" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-outline-success",
+                  attrs: { type: "button" }
+                },
+                [_vm._v("Active")]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("p", [
+                _c("strong", [_vm._v("Preceeded By: ")]),
+                _vm._v(" SP-221")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _c("strong", [_vm._v("Succeeded By: ")]),
+                _vm._v(" SP-224")
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form__pms-body" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-9" }, [
+                _c("label", { attrs: { for: "titleOfTasks" } }, [
+                  _vm._v("Title")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "email",
+                    id: "titleOfTasks",
+                    placeholder: "Enter Task"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-3" }, [
+                _c("label", { attrs: { for: "dueDateTasks" } }, [
+                  _vm._v("Due Date")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "email",
+                    id: "expectedStartDate",
+                    "aria-describedby": "emailHelp",
+                    placeholder: "Start"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-12 padding--top " }, [
+                _c("label", { attrs: { for: "descriptionOfTasks" } }, [
+                  _c("strong", [_vm._v("Tasks")])
+                ]),
+                _vm._v(" "),
+                _c("textarea", {
+                  staticClass: "form-control",
+                  attrs: {
+                    id: "description",
+                    rows: "3",
+                    placeholder: "Enter Description..."
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-12 type--right padding--top-sm" },
+                [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary pageSize__header--right",
+                      attrs: { type: "button" }
+                    },
+                    [_vm._v("Confirm Edits")]
+                  )
+                ]
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container-fluid no-padding" }, [
+        _c("div", { staticClass: "row padding--top-remove" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("h6", [_c("strong", [_vm._v("Related Requirements")])])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "padding--top-sm" }, [
+              _c("div", { staticClass: "table-component " }, [
+                _c(
+                  "div",
+                  { staticClass: "table-responsive table-responsive-fix" },
+                  [
+                    _c(
+                      "table",
+                      {
+                        staticClass:
+                          "w-100 d-block d-md-table table table-hover"
+                      },
+                      [
+                        _c("thead", [
+                          _c("tr", { staticClass: "table__header" }, [
+                            _c("th", [_vm._v("Title")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Date Raised")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Date Assigned")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Severity")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Priority")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Description")])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tbody", [
+                          _c("tr", [
+                            _c("td", [_vm._v("Task 1")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("6/10/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/05/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("High")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("High")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Create Tasks")])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Task 2")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("6/10/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/01/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Medium")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Low")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Create Tasks Creation Page")])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Task 3")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("6/10/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/30/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Medium")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Low")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Create Tasks Editing Page")])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Task 4")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("6/10/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/01/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("High")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Medium")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v("Creating A Single Tasks Display Page")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", [
+                            _c("td", [_vm._v("Task 5")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("6/10/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("12/10/19")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Medium")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Low")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Task Display for Tasks")])
+                          ])
+                        ])
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: {
+            id: "exampleModal",
+            tabindex: "-1",
+            role: "dialog",
+            "aria-labelledby": "exampleModalLabel",
+            "aria-hidden": "true"
+          }
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "modal-dialog", attrs: { role: "document" } },
+            [
+              _c("div", { staticClass: "modal-content" }, [
+                _c("div", { staticClass: "modal-header table__header" }, [
+                  _c(
+                    "h5",
+                    {
+                      staticClass: "modal-title",
+                      attrs: { id: "exampleModalLabel" }
+                    },
+                    [_vm._v("Task Creation")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "close",
+                      attrs: {
+                        type: "button",
+                        "data-dismiss": "modal",
+                        "aria-label": "Close"
+                      }
+                    },
+                    [
+                      _c("span", { attrs: { "aria-hidden": "true" } }, [
+                        _vm._v("×")
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body" }, [
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-8" }, [
+                        _c("label", { attrs: { for: "exampleInputEmail1" } }, [
+                          _vm._v("Name ")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "title",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Enter title"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-4" }, [
+                        _c("label", { attrs: { for: "exampleInputEmail1" } }, [
+                          _vm._v("Date")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "dueDate",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Due Date"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12 padding--top " }, [
+                        _c("textarea", {
+                          staticClass: "form-control",
+                          attrs: {
+                            id: "description",
+                            rows: "3",
+                            placeholder: "Enter Description..."
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "assignResource",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Assign Resource"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "expectedStartDate",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Start"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "expectedDueDate",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "End"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-6 padding--top" }, [
+                        _c("p", [_vm._v("Expected Duration: 0 Weeks")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-9 padding--top" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "relatedIssues",
+                            "aria-describedby": "emailHelp",
+                            placeholder: "Related Issues"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-info",
+                            attrs: { type: "button" }
+                          },
+                          [_vm._v("Create task")]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ]
+      )
     ])
   }
 ]
