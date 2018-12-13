@@ -206,40 +206,41 @@
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-md-8">
-                                        <label for="exampleInputEmail1">Name </label>
+                                        <label for="title">Title </label>
                                         <input type="email" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter title">
                                     </div>
                                     <div class="col-md-4">
-                                        <label for="exampleInputEmail1">Date</label>
-                                        <input type="email" class="form-control" id="dueDate" aria-describedby="emailHelp" placeholder="Due Date">
+                                        <label for="estimation">Estimation</label>
+                                        <input type="email" class="form-control" id="dueDate" aria-describedby="emailHelp" placeholder="Effort Estimation...">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 padding--top ">
+                                <div class="row padding--top-sm">
+                                    <div class="col-md-12">
                                         <textarea class="form-control" id="description" rows="3" placeholder="Enter Description..."></textarea>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 padding--top">
+                                <!-- assign resource -->
+                                <div class="row padding--top-sm">
+                                    <div class="col-md-12 ">
                                         <input type="email" class="form-control" id="assignResource" aria-describedby="emailHelp" placeholder="Assign Resource">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-3 padding--top">
+                                <div class="row padding--top-sm">
+                                    <div class="col-md-3 ">
                                         <input type="email" class="form-control" id="expectedStartDate" aria-describedby="emailHelp" placeholder="Start">
                                     </div>
-                                    <div class="col-md-3 padding--top">
+                                    <div class="col-md-3">
                                         <input type="email" class="form-control" id="expectedDueDate" aria-describedby="emailHelp" placeholder="End">
                                     </div>
-                                    <div class="col-md-6 padding--top">
+                                    <div class="col-md-6">
                                         <p>Expected Duration: 0 Weeks</p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-9 padding--top">
+                                <div class="row padding--top-sm">
+                                    <div class="col-md-9">
                                         <input type="email" class="form-control" id="relatedIssues" aria-describedby="emailHelp" placeholder="Related Issues">
                                     </div>
-                                    <div class="col-md-3 padding--top">
+                                    <div class="col-md-3">
                                         <button type="button" class="btn btn-info">Create task</button>
                                     </div>
                                 </div>

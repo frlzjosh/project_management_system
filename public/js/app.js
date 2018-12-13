@@ -55783,6 +55783,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -56233,8 +56234,8 @@ var staticRenderFns = [
                   _c("div", { staticClass: "form-group" }, [
                     _c("div", { staticClass: "row" }, [
                       _c("div", { staticClass: "col-md-8" }, [
-                        _c("label", { attrs: { for: "exampleInputEmail1" } }, [
-                          _vm._v("Name ")
+                        _c("label", { attrs: { for: "title" } }, [
+                          _vm._v("Title ")
                         ]),
                         _vm._v(" "),
                         _c("input", {
@@ -56249,8 +56250,8 @@ var staticRenderFns = [
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "col-md-4" }, [
-                        _c("label", { attrs: { for: "exampleInputEmail1" } }, [
-                          _vm._v("Date")
+                        _c("label", { attrs: { for: "estimation" } }, [
+                          _vm._v("Estimation")
                         ]),
                         _vm._v(" "),
                         _c("input", {
@@ -56259,14 +56260,14 @@ var staticRenderFns = [
                             type: "email",
                             id: "dueDate",
                             "aria-describedby": "emailHelp",
-                            placeholder: "Due Date"
+                            placeholder: "Effort Estimation..."
                           }
                         })
                       ])
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-12 padding--top " }, [
+                    _c("div", { staticClass: "row padding--top-sm" }, [
+                      _c("div", { staticClass: "col-md-12" }, [
                         _c("textarea", {
                           staticClass: "form-control",
                           attrs: {
@@ -56278,8 +56279,8 @@ var staticRenderFns = [
                       ])
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-12 padding--top" }, [
+                    _c("div", { staticClass: "row padding--top-sm" }, [
+                      _c("div", { staticClass: "col-md-12 " }, [
                         _c("input", {
                           staticClass: "form-control",
                           attrs: {
@@ -56292,8 +56293,8 @@ var staticRenderFns = [
                       ])
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                    _c("div", { staticClass: "row padding--top-sm" }, [
+                      _c("div", { staticClass: "col-md-3 " }, [
                         _c("input", {
                           staticClass: "form-control",
                           attrs: {
@@ -56305,7 +56306,7 @@ var staticRenderFns = [
                         })
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                      _c("div", { staticClass: "col-md-3" }, [
                         _c("input", {
                           staticClass: "form-control",
                           attrs: {
@@ -56317,13 +56318,13 @@ var staticRenderFns = [
                         })
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "col-md-6 padding--top" }, [
+                      _c("div", { staticClass: "col-md-6" }, [
                         _c("p", [_vm._v("Expected Duration: 0 Weeks")])
                       ])
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-9 padding--top" }, [
+                    _c("div", { staticClass: "row padding--top-sm" }, [
+                      _c("div", { staticClass: "col-md-9" }, [
                         _c("input", {
                           staticClass: "form-control",
                           attrs: {
@@ -56335,7 +56336,7 @@ var staticRenderFns = [
                         })
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "col-md-3 padding--top" }, [
+                      _c("div", { staticClass: "col-md-3" }, [
                         _c(
                           "button",
                           {
