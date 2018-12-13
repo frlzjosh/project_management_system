@@ -6,62 +6,73 @@
         <div class="pageSize__header">
             <div class="row">
                 <div class="col-md-6">
-                    <h5 class="pageSize__header--left"><strong>Deliverables</strong></h5>
+                    <h5 class="pageSize__header--left"><strong>Issues</strong></h5>
                 </div>
                 <div class="col-md-6">
                     <button type="button" class="btn btn-primary pageSize__header--right" data-toggle="modal" data-target="#exampleModal">
-                        Create Task
+                        Add
                     </button>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <!-- table -->
+                <!-- issues table -->
                 <div class="table-component">
-                    <table class="table">
+                    <table class="w-100 d-block d-md-table table table-hover">
                         <thead>
                             <tr class="table__header">
                                 <th>Title</th>
-                                <th>Due Date</th>
-                                <th>Completion</th>
+                                <th>Date Raised</th>
+                                <th>Date Assigned</th>
+                                <th>Severity</th>
+                                <th>Priority</th>
                                 <th>Description</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Deliverable Task 1</td>
+                                <td>Issues 1</td>
+                                <td>6/10/19</td>
                                 <td>12/05/19</td>
-                                <td>63%</td>
-                                <td>Create Deliverable Display Page</td>
+                                <td>High</td>
+                                <td>High</td>
+                                <td>Create Issues</td>
                             </tr>
                             <tr>
-                                <td>Deliverable Task 2</td>
-                                <td>12/10/19</td>
-                                <td>23%</td>
-                                <td>Create Deliverables Creation Page</td>
-                            </tr>
-                            <tr>
-                                <td>Deliverable Task 3</td>
-                                <td>12/30/19</td>
-                                <td>90%</td>
-                                <td>Create Deliverables Editing Page</td>
-                            </tr>
-                            <tr>
-                                <td>Deliverable Task 4</td>
+                                <td>Issues 2</td>
+                                <td>6/10/19</td>
                                 <td>12/01/19</td>
-                                <td>57%</td>
-                                <td>Creating A Single Deliverables Display Page </td>
-
+                                <td>Medium</td>
+                                <td>Low</td>
+                                <td>Create Issues Creation Page</td>
                             </tr>
                             <tr>
-                                <td>Deliverable Task 5</td>
+                                <td>Issues 3</td>
+                                <td>6/10/19</td>
+                                <td >12/30/19</td>
+                                <td>Medium</td>
+                                <td>Low</td>
+                                <td>Create Issues Editing Page</td>
+                            </tr>
+                            <tr>
+                                <td>Issues 4</td>
+                                <td>6/10/19</td>
+                                <td>12/01/19</td>
+                                <td>High</td>
+                                <td>Medium</td>
+                                <td>Creating A Single Issues Display Page</td>
+                            </tr>
+                            <tr>
+                                <td>Issues 5</td>
+                                <td>6/10/19</td>
                                 <td>12/10/19</td>
-                                <td>25%</td>
-                                <td>Task Display for Deliverables</td>
+                                <td>Medium</td>
+                                <td>Low</td>
+                                <td>Task Display for Issues</td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table> <!--end table -->
                 </div>
             </div>
         </div>
@@ -70,11 +81,21 @@
             <form >
                 <div class="form__pms-header">
                     <div class="row">
-                        <div class="col-md-6">
-                            <p><strong>ID: </strong> SP-221</p>
+                        <div class="col-md-10">
+                            <p><strong>ID: </strong> SP-223</p>
+                            <p><strong>Date Raised: </strong> 6/30/19</p>
+                            <p><strong>Estimated Duration: </strong> 6/30/19 - 12/03/19 (6 MO.)</p>
                         </div>
-                        <div class="col-md-6 type--right">
-                            <button type="button" class="btn btn-outline-success">Active</button>
+                        <div class="col-md-2 type--right">
+                            <button type="button" class="btn btn-outline-danger">Closed</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Estimated End Date: </strong>12/03/19</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Actual End Date: </strong> 12/10/19</p>
                         </div>
                     </div>
                 </div>
@@ -82,19 +103,33 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-9">
-                                <label for="titleOfDeliverable">Title</label>
-                                <input type="email" class="form-control" id="titleOfDeliverable" placeholder="Enter Deliverable">
+                                <label for="titleOfIssue"><strong>Title</strong></label>
+                                <input type="email" class="form-control" id="titleOfDeliverable" placeholder="Enter Issue">
                             </div>
                             <div class="col-md-3">
-                                <label for="dueDateDeliverable">Due Date</label>
-                                <input type="email" class="form-control" id="expectedStartDate" aria-describedby="emailHelp" placeholder="Start">
+                                <label for="relatedTask"><strong>Related Task</strong></label>
+                                <input type="email" class="form-control" id="relatedTask" aria-describedby="emailHelp" placeholder="Related Task">
                             </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Choose Resource
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Peter Parker</a>
+                            <a class="dropdown-item" href="#">Stever Rodgers</a>
+                            <a class="dropdown-item" href="#">Thor Odinson</a>
+                            <a class="dropdown-item" href="#">Hank Pym</a>
+                            <a class="dropdown-item" href="#">Bruce Banner</a>
+                            <a class="dropdown-item" href="#">Black Widow</a>
+                            <a class="dropdown-item" href="#">Tony Stark</a>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-12 padding--top ">
-                                <label for="descriptionOfDeliverable"><strong>Deliverable</strong></label>
+                                <label for="descriptionOfIssues"><strong>Issues</strong></label>
                                 <textarea class="form-control" id="description" rows="3" placeholder="Enter Description..."></textarea>
                             </div>
                         </div>
@@ -133,35 +168,35 @@
                                         <td>12/05/19</td>
                                         <td>REQ-32</td>
                                         <td>Peter</td>
-                                        <td>Create Deliverables</td>
+                                        <td>Create Issues</td>
                                     </tr>
                                     <tr>
                                         <td>Requirement 2</td>
                                         <td>12/01/19</td>
                                         <td>REQ-33</td>
                                         <td>Thor</td>
-                                        <td>Create Deliverables Creation Page</td>
+                                        <td>Create Issues Creation Page</td>
                                     </tr>
                                     <tr>
                                         <td>Requirement 3</td>
                                         <td >12/30/19</td>
                                         <td>REQ-34</td>
                                         <td>Hank</td>
-                                        <td>Create Deliverables Editing Page</td>
+                                        <td>Create Issues Editing Page</td>
                                     </tr>
                                     <tr>
                                         <td>Requirement 4</td>
                                         <td>12/01/19</td>
                                         <td>REQ-29</td>
                                         <td>Odin</td>
-                                        <td>Creating A Single Deliverables Display Page</td>
+                                        <td>Creating A Single Issues Display Page</td>
                                     </tr>
                                     <tr>
                                         <td>Requirement 5</td>
                                         <td>12/10/19</td>
                                         <td>REQ-31</td>
                                         <td>Steve</td>
-                                        <td>Task Display for Deliverables</td>
+                                        <td>Task Display for Issues</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -221,7 +256,7 @@
                                         <input type="email" class="form-control" id="relatedIssues" aria-describedby="emailHelp" placeholder="Related Issues">
                                     </div>
                                     <div class="col-md-3 padding--top">
-                                        <button type="button" class="btn btn-info">Create task</button>
+                                        <button type="button" class="btn btn-info">Add </button>
                                     </div>
                                 </div>
                             </div>
@@ -235,7 +270,6 @@
 
 <script>
 import subHeader from '../../../components/global/subHeader.vue';
-
 export default {
     components: {
         subHeader,

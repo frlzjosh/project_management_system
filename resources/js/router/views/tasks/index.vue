@@ -119,78 +119,78 @@
                     </div>
                 </div>
             </form>
-         <div class="container-fluid no-padding">
-             <div class="row padding--top-remove">
-                 <div class="col-md-12">
-                     <h6><strong>Related Requirements</strong></h6>
-                 </div>
-             </div>
-             <div class="row">
-                 <div class="col-md-12">
-                    <div class="padding--top-sm">
-                        <div class="table-component ">
-                            <div class="table-responsive table-responsive-fix">
-                            <table class="w-100 d-block d-md-table table table-hover">
-                                <thead>
-                                    <tr class="table__header">
-                                        <th>Title</th>
-                                        <th>Date Raised</th>
-                                        <th>Date Assigned</th>
-                                        <th>Severity</th>
-                                        <th>Priority</th>
-                                        <th>Description</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Task 1</td>
-                                        <td>6/10/19</td>
-                                        <td>12/05/19</td>
-                                        <td>High</td>
-                                        <td>High</td>
-                                        <td>Create Tasks</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Task 2</td>
-                                        <td>6/10/19</td>
-                                        <td>12/01/19</td>
-                                        <td>Medium</td>
-                                        <td>Low</td>
-                                        <td>Create Tasks Creation Page</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Task 3</td>
-                                        <td>6/10/19</td>
-                                        <td >12/30/19</td>
-                                        <td>Medium</td>
-                                        <td>Low</td>
-                                        <td>Create Tasks Editing Page</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Task 4</td>
-                                        <td>6/10/19</td>
-                                        <td>12/01/19</td>
-                                        <td>High</td>
-                                        <td>Medium</td>
-                                        <td>Creating A Single Tasks Display Page</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Task 5</td>
-                                        <td>6/10/19</td>
-                                        <td>12/10/19</td>
-                                        <td>Medium</td>
-                                        <td>Low</td>
-                                        <td>Task Display for Tasks</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+            <div class="container-fluid no-padding">
+                <div class="row padding--top-remove">
+                    <div class="col-md-12">
+                        <h6><strong>Related Requirements</strong></h6>
                     </div>
                 </div>
-            </div>
-            </div>
-        </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="padding--top-sm">
+                            <div class="table-component ">
+                                <div class="table-responsive table-responsive-fix">
+                                    <table class="w-100 d-block d-md-table table table-hover">
+                                        <thead>
+                                            <tr class="table__header">
+                                                <th>Title</th>
+                                                <th>Date Raised</th>
+                                                <th>Date Assigned</th>
+                                                <th>Severity</th>
+                                                <th>Priority</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Task 1</td>
+                                                <td>6/10/19</td>
+                                                <td>12/05/19</td>
+                                                <td>High</td>
+                                                <td>High</td>
+                                                <td>Create Tasks</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Task 2</td>
+                                                <td>6/10/19</td>
+                                                <td>12/01/19</td>
+                                                <td>Medium</td>
+                                                <td>Low</td>
+                                                <td>Create Tasks Creation Page</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Task 3</td>
+                                                <td>6/10/19</td>
+                                                <td >12/30/19</td>
+                                                <td>Medium</td>
+                                                <td>Low</td>
+                                                <td>Create Tasks Editing Page</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Task 4</td>
+                                                <td>6/10/19</td>
+                                                <td>12/01/19</td>
+                                                <td>High</td>
+                                                <td>Medium</td>
+                                                <td>Creating A Single Tasks Display Page</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Task 5</td>
+                                                <td>6/10/19</td>
+                                                <td>12/10/19</td>
+                                                <td>Medium</td>
+                                                <td>Low</td>
+                                                <td>Task Display for Tasks</td>
+                                            </tr>
+                                        </tbody>
+                                     </table> <!--end table -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div> <!--end row -->
+            </div><!--  end contaienr -->
+        </div> <!-- end formPMS -->
         <!-- Modal -->
         <div class="row">
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
