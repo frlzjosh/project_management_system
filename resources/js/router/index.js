@@ -20,13 +20,8 @@ const router = new VueRouter({
         { path: '/deliverables', component: deliverables},
         { path: '/tasks', component: tasks},
         { path: '/issues', component: issues},
-        { path: '/changes', component: changes},
-        { path: '/references', component: references},
         { path: '/resources', component: resources},
         { path: '/actionItems', component: actionItems},
-        { path: '/requirements', component: requirements},
-        { path: '/decisions', component: decisions},
-        { path: '/risks', component: risks},
     ]
 });
 
