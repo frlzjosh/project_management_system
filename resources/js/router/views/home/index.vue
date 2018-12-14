@@ -6,10 +6,18 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="home__buttons">
-                    <button type="button" class="btn btn-primary">16 Deliverables</button>
-                    <button type="button" class="btn btn-success">124 Tasks</button>
-                    <button type="button" class="btn btn-danger">26 Issues</button>
-                    <button type="button" class="btn btn-warning">37 Actions Items</button>
+                    <router-link class="router-link" active-class="hr-nav" to="/deliverables">
+                        <button type="button" class="btn btn-primary">16 Deliverables</button>
+                    </router-link>
+                    <router-link class="router-link" active-class="hr-nav" to="/tasks">
+                        <button type="button" class="btn btn-success">124 Tasks</button>
+                    </router-link>
+                    <router-link class="router-link" active-class="hr-nav" to="/issues">
+                        <button type="button" class="btn btn-danger">26 Issues</button>
+                    </router-link>
+                    <router-link class="router-link" active-class="hr-nav" to="/actionItems">
+                        <button type="button" class="btn btn-warning">37 Actions Items</button>
+                    </router-link>
                 </div>
             </div>
         </div>
