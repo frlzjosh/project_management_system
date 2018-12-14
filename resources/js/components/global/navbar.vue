@@ -12,7 +12,7 @@
             </div>
             <div class="navbar__right">
                 <ul class="navbar__right-list">
-                    <li><h6>10:20 AM</h6></li>
+                    <li><h6 style="margin-bottom: auto">10:20 AM</h6></li> <!--i'm sorry-->
                     <li>Aug 1, 2019</li>
                 </ul>
             </div>

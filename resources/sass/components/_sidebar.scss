@@ -1,9 +1,10 @@
 .sidebar{
-    position: relative;
+    position: fixed;
     background-color: #222222;
     width: 200px;
-    height: 500px;
+    height: 100%;
     color:white;
+    margin-top: 2.5rem;
     &__home{
         background-color: black;
         position: relative;

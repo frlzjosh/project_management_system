@@ -1,12 +1,13 @@
 .navbar{
+    position: fixed !important;
     height: 45px;
     width: 100%;
-    background-color: green;
+    background-color: #4ba26e;
     color:white;
+    z-index: 99;
     &__left{
         display: flex;
         margin-left:5px;
-        position: relative;
         &-img{
             margin-right: 5px;
             height:25px;

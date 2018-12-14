@@ -2,7 +2,7 @@
 <div class="col-md-3 lol ">
     <div class="sidebar">
         <div class="sidebar__home">
-            <router-link to="/"><h4><i class="fas fa-home"></i></h4></router-link>
+            <router-link to="/"><h4><i class="fas fa-home" style="color:white"></i></h4></router-link>
         </div>
         <ul class="sidebar__list">
             <router-link class="router-link" to="/deliverables"><li class="sidebar__list-item">Deliverables</li></router-link>

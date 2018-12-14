@@ -51206,6 +51206,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -51258,46 +51266,99 @@ var render = function() {
     _c(
       "div",
       { staticClass: "col-md-12" },
-      [_c("sub-header"), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1)],
+      [
+        _c("sub-header"),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c(
+              "div",
+              { staticClass: "home__buttons" },
+              [
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "router-link",
+                    attrs: { "active-class": "hr-nav", to: "/deliverables" }
+                  },
+                  [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("16 Deliverables")]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "router-link",
+                    attrs: { "active-class": "hr-nav", to: "/tasks" }
+                  },
+                  [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("124 Tasks")]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "router-link",
+                    attrs: { "active-class": "hr-nav", to: "/issues" }
+                  },
+                  [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-danger",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("26 Issues")]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "router-link",
+                    attrs: { "active-class": "hr-nav", to: "/actionItems" }
+                  },
+                  [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-warning",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("37 Actions Items")]
+                    )
+                  ]
+                )
+              ],
+              1
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(0)
+      ],
       1
     )
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-12" }, [
-        _c("div", { staticClass: "home__buttons" }, [
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "button" } },
-            [_vm._v("16 Deliverables")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-success", attrs: { type: "button" } },
-            [_vm._v("124 Tasks")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-danger", attrs: { type: "button" } },
-            [_vm._v("26 Issues")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-warning", attrs: { type: "button" } },
-            [_vm._v("37 Actions Items")]
-          )
-        ])
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -55602,7 +55663,11 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "navbar__right" }, [
             _c("ul", { staticClass: "navbar__right-list" }, [
-              _c("li", [_c("h6", [_vm._v("10:20 AM")])]),
+              _c("li", [
+                _c("h6", { staticStyle: { "margin-bottom": "auto" } }, [
+                  _vm._v("10:20 AM")
+                ])
+              ]),
               _vm._v(" "),
               _c("li", [_vm._v("Aug 1, 2019")])
             ])
@@ -55704,7 +55769,12 @@ var render = function() {
         { staticClass: "sidebar__home" },
         [
           _c("router-link", { attrs: { to: "/" } }, [
-            _c("h4", [_c("i", { staticClass: "fas fa-home" })])
+            _c("h4", [
+              _c("i", {
+                staticClass: "fas fa-home",
+                staticStyle: { color: "white" }
+              })
+            ])
           ])
         ],
         1

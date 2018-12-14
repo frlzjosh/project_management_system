@@ -24,6 +24,7 @@
 
 .pageSize {
   width: 800px;
+  margin-top: 2.5rem;
 }
 
 .pageSize__header {
@@ -68,8 +69,8 @@ td {
   height: 25px;
   width: 190px;
   left: 100px;
-  background-color: blue;
-  border: 1px solid blue;
+  background-color: skyblue;
+  border: 1px solid skyblue;
   border-radius: 5px;
 }
 
@@ -78,8 +79,8 @@ td {
   height: 25px;
   width: 290px;
   left: 160px;
-  background-color: green;
-  border: 1px solid green;
+  background-color: #2fbf71;
+  border: 1px solid #2fbf71;
   border-radius: 5px;
 }
 
@@ -88,8 +89,8 @@ td {
   height: 25px;
   width: 220px;
   left: 160px;
-  background-color: purple;
-  border: 1px solid purple;
+  background-color: skyblue;
+  border: 1px solid skyblue;
   border-radius: 5px;
 }
 
@@ -98,8 +99,8 @@ td {
   height: 25px;
   width: 320px;
   left: 210px;
-  background-color: yellow;
-  border: 1px solid yellow;
+  background-color: #e0d96d;
+  border: 1px solid #e0d96d;
   border-radius: 5px;
 }
 
@@ -108,8 +109,8 @@ td {
   height: 25px;
   width: 180px;
   left: 270px;
-  background-color: green;
-  border: 1px solid green;
+  background-color: #2fbf71;
+  border: 1px solid #2fbf71;
   border-radius: 5px;
 }
 
@@ -118,8 +119,8 @@ td {
   height: 25px;
   width: 160px;
   left: 420px;
-  background-color: blue;
-  border: 1px solid blue;
+  background-color: skyblue;
+  border: 1px solid skyblue;
   border-radius: 5px;
 }
 
@@ -128,16 +129,18 @@ td {
   height: 25px;
   width: 385px;
   left: 300px;
-  background-color: red;
-  border: 1px solid red;
+  background-color: #e37c6c;
+  border: 1px solid #e37c6c;
   border-radius: 5px;
 }
 
 .navbar {
+  position: fixed !important;
   height: 45px;
   width: 100%;
-  background-color: green;
+  background-color: #4ba26e;
   color: white;
+  z-index: 99;
 }
 
 .navbar__left {
@@ -145,7 +148,6 @@ td {
   display: -ms-flexbox;
   display: flex;
   margin-left: 5px;
-  position: relative;
 }
 
 .navbar__left-img {
@@ -176,11 +178,12 @@ td {
 }
 
 .sidebar {
-  position: relative;
+  position: fixed;
   background-color: #222222;
   width: 200px;
-  height: 500px;
+  height: 100%;
   color: white;
+  margin-top: 2.5rem;
 }
 
 .sidebar__home {
@@ -268,10 +271,6 @@ td {
 .dropdown-toggle {
   background-color: white !important;
   color: black !important;
-}
-
-.pageSize {
-  width: 800px;
 }
 
 .home__buttons {

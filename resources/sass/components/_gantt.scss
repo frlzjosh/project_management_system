@@ -10,24 +10,24 @@
         font-weight: 500;
     }
     &-peter{
-        @include createGantt(190px, 100px, blue);
+        @include createGantt(190px, 100px, skyblue);
     }
     &-steve{
-        @include createGantt(290px, 160px, green);
+        @include createGantt(290px, 160px,#2fbf71);
     }
     &-thor{
-        @include createGantt(220px, 160px, purple);
+        @include createGantt(220px, 160px, skyblue);
     }
     &-hank{
-        @include createGantt(320px, 210px, yellow);
+        @include createGantt(320px, 210px, #e0d96d);
     }
     &-banner{
-        @include createGantt(180px, 270px, green);
+        @include createGantt(180px, 270px, #2fbf71);
     }
     &-widow{
-        @include createGantt(160px, 420px, blue);
+        @include createGantt(160px, 420px, skyblue);
     }
     &-stark{
-        @include createGantt(385px, 300px, red);
+        @include createGantt(385px, 300px, #e37c6c);
     }
 }
