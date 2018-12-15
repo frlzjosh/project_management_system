@@ -99,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="form__pms-body--md">
+                <div class="form__pms-body--lg">
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-9">

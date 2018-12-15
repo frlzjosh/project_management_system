@@ -1,15 +1,18 @@
 require('./bootstrap');
 
 import Vue from 'vue';
-import store from './store';
+import Vuex from 'vuex';
+import storeData from './store';
 import router from "./router";
 
 window.Vue = require('vue');
+Vue.use(Vuex);
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+const store = new Vuex.Store(storeData);
+
 
 import App from "./App.vue";
-import { mapGetters } from 'vuex';
+
 const app = new Vue({
     el: "#app",
     store,
