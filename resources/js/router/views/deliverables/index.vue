@@ -9,7 +9,7 @@
                     <h5 class="pageSize__header--left"><strong>Deliverables</strong></h5>
                 </div>
                 <div class="col-md-6">
-                    <button type="button" class="btn btn-primary pageSize__header--right" data-toggle="modal" data-target="#exampleModal">
+                    <button type="button" @click="showAction" class="btn btn-primary pageSize__header--right" data-toggle="modal" data-target="#exampleModal">
                         Create Task
                     </button>
                 </div>
@@ -237,6 +237,9 @@
 import subHeader from '../../../components/global/subHeader.vue';
 
 export default {
+    mounted(){
+        this.$store.dispatch('allDeliverables');
+    },
     components: {
         subHeader,
     },
@@ -245,6 +248,9 @@ export default {
             $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').trigger('focus')
         })
+        },
+        showAction(){
+            this.$store.dispatch('allDeliverables');
         }
     },
 

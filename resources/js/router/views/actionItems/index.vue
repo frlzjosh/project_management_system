@@ -6,11 +6,11 @@
         <div class="pageSize__header">
             <div class="row">
                 <div class="col-md-6">
-                    <h5 class="pageSize__header--left"><strong>Deliverables</strong></h5>
+                    <h5 class="pageSize__header--left"><strong>Action Items</strong></h5>
                 </div>
                 <div class="col-md-6">
                     <button type="button" class="btn btn-primary pageSize__header--right" data-toggle="modal" data-target="#exampleModal">
-                        Create Task
+                        Add
                     </button>
                 </div>
             </div>
@@ -23,42 +23,42 @@
                         <thead>
                             <tr class="table__header">
                                 <th>Title</th>
-                                <th>Due Date</th>
-                                <th>Completion</th>
+                                <th>Date Raised</th>
+                                <th>Date Assigned</th>
                                 <th>Description</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Deliverable Task 1</td>
+                                <td>Action Item 1</td>
+                                <td>6/05/19</td>
                                 <td>12/05/19</td>
-                                <td>63%</td>
-                                <td>Create Deliverable Display Page</td>
+                                <td>Create Action Item Display Page</td>
                             </tr>
                             <tr>
-                                <td>Deliverable Task 2</td>
+                                <td>Action Item 2</td>
+                                <td>6/10/19</td>
                                 <td>12/10/19</td>
-                                <td>23%</td>
-                                <td>Create Deliverables Creation Page</td>
+                                <td>Create Action Item Creation Page</td>
                             </tr>
                             <tr>
-                                <td>Deliverable Task 3</td>
+                                <td>Action Item 3</td>
+                                <td>6/30/19</td>
                                 <td>12/30/19</td>
-                                <td>90%</td>
-                                <td>Create Deliverables Editing Page</td>
+                                <td>Create Action Item Editing Page</td>
                             </tr>
                             <tr>
-                                <td>Deliverable Task 4</td>
+                                <td>Action Item 4</td>
+                                <td>6/01/19</td>
                                 <td>12/01/19</td>
-                                <td>57%</td>
-                                <td>Creating A Single Deliverables Display Page </td>
+                                <td>Creating A Single Action Item Display Page </td>
 
                             </tr>
                             <tr>
-                                <td>Deliverable Task 5</td>
+                                <td>Action Item 5</td>
+                                <td>6/10/19</td>
                                 <td>12/10/19</td>
-                                <td>25%</td>
-                                <td>Task Display for Deliverables</td>
+                                <td>Task Display for Action Items</td>
                             </tr>
                         </tbody>
                     </table>
@@ -70,31 +70,74 @@
             <form >
                 <div class="form__pms-header">
                     <div class="row">
-                        <div class="col-md-6">
-                            <p><strong>ID: </strong> SP-221</p>
+                        <div class="col-md-10">
+                            <p><strong>ID: </strong> ACT-233</p>
+                            <p><strong>Date Created: </strong> 6/30/19</p>
+                            <p><strong>Estimated End Duration: </strong> 12/03/19 (6 MO.)</p>
                         </div>
-                        <div class="col-md-6 type--right">
-                            <button type="button" class="btn btn-outline-success">Active</button>
+                        <div class="col-md-2 type--right">
+                            <button type="button" class="btn btn-outline-danger">Closed</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Estimated End Date: </strong>12/03/19</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Actual End Date: </strong> 12/10/19</p>
                         </div>
                     </div>
                 </div>
-                <div class="form__pms-body">
+                <div class="form__pms-body--lg">
                     <div class="form-group">
                         <div class="row">
-                            <div class="col-md-9">
-                                <label for="titleOfDeliverable">Title</label>
-                                <input type="email" class="form-control" id="titleOfDeliverable" placeholder="Enter Deliverable">
+                            <div class="col-md-12">
+                                <label for="titleOfIssue"><strong>Title</strong></label>
+                                <input type="email" class="form-control" id="titleOfDeliverable" placeholder="Enter Issue">
                             </div>
-                            <div class="col-md-3">
-                                <label for="dueDateDeliverable">Due Date</label>
-                                <input type="email" class="form-control" id="expectedStartDate" aria-describedby="emailHelp" placeholder="Start">
+                        </div>
+                    </div>
+                    <div class="row padding--top-sm">
+                        <div class="col-md-12">
+                            <div class="dropdown">
+                                <h6><strong>Resource</strong></h6>
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Choose Resource
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Peter Parker</a>
+                                    <a class="dropdown-item" href="#">Stever Rodgers</a>
+                                    <a class="dropdown-item" href="#">Thor Odinson</a>
+                                    <a class="dropdown-item" href="#">Hank Pym</a>
+                                    <a class="dropdown-item" href="#">Bruce Banner</a>
+                                    <a class="dropdown-item" href="#">Black Widow</a>
+                                    <a class="dropdown-item" href="#">Tony Stark</a>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row padding--top-sm">
+                        <div class="col-md-5">
+                            <div class="dropdown">
+                                <h6><strong>Status</strong></h6>
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Status
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Open</a>
+                                    <a class="dropdown-item" href="#">Closed</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <label for="titleOfIssue"><strong>Status Description</strong></label>
+                            <input type="email" class="form-control" id="statusOfDecription" placeholder="Still Needed?">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="row">
-                            <div class="col-md-12 padding--top ">
-                                <label for="descriptionOfDeliverable"><strong>Deliverable</strong></label>
+                            <div class="col-md-12 padding--top-sm">
+                                <h6><strong>Description</strong></h6>
                                 <textarea class="form-control" id="description" rows="3" placeholder="Enter Description..."></textarea>
                             </div>
                         </div>
@@ -106,71 +149,6 @@
                     </div>
                 </div>
             </form>
-         <div class="container-fluid no-padding">
-             <div class="row padding--top-remove">
-                 <div class="col-md-12">
-                     <h6><strong>Related Requirements</strong></h6>
-                 </div>
-             </div>
-             <div class="row">
-                 <div class="col-md-12">
-                    <div class="padding--top-sm">
-                        <div class="table-component ">
-                            <div class="table-responsive table-responsive-fix">
-                            <table class="w-100 d-block d-md-table table table-hover">
-                                <thead>
-                                    <tr class="table__header">
-                                        <th>Title</th>
-                                        <th>Due Date</th>
-                                        <th>ID</th>
-                                        <th>Assigned Resource</th>
-                                        <th>Description</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Requirement 1</td>
-                                        <td>12/05/19</td>
-                                        <td>REQ-32</td>
-                                        <td>Peter</td>
-                                        <td>Create Deliverables</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Requirement 2</td>
-                                        <td>12/01/19</td>
-                                        <td>REQ-33</td>
-                                        <td>Thor</td>
-                                        <td>Create Deliverables Creation Page</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Requirement 3</td>
-                                        <td >12/30/19</td>
-                                        <td>REQ-34</td>
-                                        <td>Hank</td>
-                                        <td>Create Deliverables Editing Page</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Requirement 4</td>
-                                        <td>12/01/19</td>
-                                        <td>REQ-29</td>
-                                        <td>Odin</td>
-                                        <td>Creating A Single Deliverables Display Page</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Requirement 5</td>
-                                        <td>12/10/19</td>
-                                        <td>REQ-31</td>
-                                        <td>Steve</td>
-                                        <td>Task Display for Deliverables</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            </div>
         </div>
         <!-- Modal -->
         <div class="row">

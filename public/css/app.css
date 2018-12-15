@@ -10,6 +10,10 @@
   text-align: right;
 }
 
+.type--left {
+  text-align: left;
+}
+
 .padding--top-sm {
   margin-top: 20px;
 }
@@ -265,7 +269,11 @@ td {
 }
 
 .form__pms-body--md {
-  height: 400px;
+  height: 330px;
+}
+
+.form__pms-body--lg {
+  height: 420px;
 }
 
 .dropdown-toggle {
