@@ -13,4 +13,4 @@ My third project for Computer Science 380: Introduction to Software Engineering.
 - **Node**, **npm**, **yarn** (optional)
 
 # Link to the website
-`https://pms-380.herokuapp.com/#/`
+[link text itself]: https://pms-380.herokuapp.com/#/
